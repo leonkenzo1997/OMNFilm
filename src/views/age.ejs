@@ -1,0 +1,94 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+	<script src="https://auth.mobilians.co.kr/js/ext/ext_inc_comm.js"></script>
+	<script language="javascript">
+		function payRequest() {
+			MCASH_PAYMENT(document.payForm);
+		}
+	</script>
+</head>
+
+<body>
+	<form name="payForm" accept-charset='euc-kr'>
+		<table border="1" width="100%">
+			<tr>
+				<td align="center" colspan="6">
+					<font size="15pt"><b>휴대폰본인확인</b>
+				</td>
+			</tr>
+			<input type="hidden" name="CASH_GB" id="CASH_GB" value="<%= data.CASH_GB %>">
+			<input type="hidden" name="CI_SVCID" id="CI_SVCID" value="<%= data.CI_SVCID %>">
+			<input type="hidden" name="Cryptyn" id="Cryptyn" value="<%= data.Cryptyn %>">
+			<input type="hidden" name="Keygb" id="Keygb" value="<%= data.Keygb %>">
+			<input type="hidden" name="CALL_TYPE" id="CALL_TYPE" value="<%= data.CALL_TYPE %>">
+			<input type="hidden" name="LOGO_YN" id="LOGO_YN" value="<%= data.LOGO_YN %>">
+			<input type="hidden" name="CI_Mode" id="CI_Mode" value="<%= data.CI_Mode %>">
+			<input type="hidden" name="DI_CODE" id="DI_CODE" value="<%= data.DI_CODE %>">
+			<input type="hidden" name="Siteurl" id="Siteurl" value="<%= data.Siteurl %>">
+			<input type="hidden" name="SUB_CPID" id="SUB_CPID" value="<%= data.SUB_CPID %>">
+			<input type="hidden" name="Callback" id="Callback" size="30" value="<%= data.Callback %>">
+			<input type="hidden" name="Tradeid" id="Tradeid" size="30" value="<%= data.Tradeid %>">
+			<input type="hidden" name="Okurl" id="Okurl" size="30" value="<%= data.Okurl %>">
+			<tr>
+				<td align="center">SMS문구</td>
+				<td align="center">Smstext</td>
+				<td><input type="text" name="Smstext" style="width:100%" id="Smstext" value="<%= data.Smstext %>">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">LMS제목</td>
+				<td align="center">Lmstitle</td>
+				<td><input type="text" name="Lmstitle" id="Lmstitle" style="width:100%" value="<%= data.Lmstitle %>">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">LMS본문</td>
+				<td align="center">Lmstext</td>
+				<td><textarea name="Lmstext" id="Lmstext" rows="6" style="width:100%"
+						value="<%= data.Lmstext %>"></textarea></td>
+			</tr>
+			<tr>
+				<td align="center">거래종류</td>
+				<td align="center">PAY_MODE</td>
+				<td>
+					<select name="PAY_MODE" style="width:300px">
+						<option value="10">실서버(10)</option>
+						<option value="00">테스트(00)</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Okurl암호화</td>
+				<td align="center">Cryptokurl</td>
+				<td>
+					<select name="Cryptokurl" id="Cryptokurl" style="width:300px">
+						<option value="Y">사용</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">이통사고정</td>
+				<td align="center">CI_FIXCOMMID</td>
+				<td>
+					<select name="CI_FIXCOMMID" id="CI_FIXCOMMID" style="width:300px">
+						<option value="">사용안함</option>
+						<option value="SKT">SKT</option>
+						<option value="KTF">KTF</option>
+						<option value="LGT">LGT</option>
+						<option value="SKR">SKT알뜰폰</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="6"> </td>
+			</tr>
+			<tr>
+				<td align="center" colspan="6"><input type="button" value="인증하기" onclick="payRequest()"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

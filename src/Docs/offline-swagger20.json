@@ -1,0 +1,1772 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "OMN_OFFLINE",
+    "contact": {}
+  },
+  "host": "13.209.212.38:3000",
+  "basePath": "/offline",
+  "securityDefinitions": {},
+  "schemes": [],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/challenger/create": {
+      "post": {
+        "description": "113.161.49.113:3000/offline/challenger/create",
+        "summary": "api create challenger on offline type stand alone",
+        "tags": [
+          "Challenger"
+        ],
+        "operationId": "apicreatechallengeronofflinetypestandalone",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apicreatechallengeronofflinetypestandalonerequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/challenger": {
+      "get": {
+        "description": "{{url}}/offline/challenger",
+        "summary": "api get list challengerbelong to user",
+        "tags": [
+          "Challenger"
+        ],
+        "operationId": "apigetlistchallengerbelongtouser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/challenger/5f754c3631aaeb4e8bc7b609": {
+      "get": {
+        "description": "{{url}}/offline/challenger/5f62df7735e860e7ac9caecf",
+        "summary": "api get detail challenger belong to user",
+        "tags": [
+          "Challenger"
+        ],
+        "operationId": "apigetdetailchallengerbelongtouser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/challenger/5f880618bb5cb12d80bbc9d7": {
+      "put": {
+        "summary": "Update challanger for user",
+        "tags": [
+          "Challenger"
+        ],
+        "operationId": "Updatechallangerforuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UpdatechallangerforuserRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/challenger/listProgramUpload": {
+      "get": {
+        "description": "{{url}}/offline/challenger",
+        "summary": "api get list challenger upload for user",
+        "tags": [
+          "Challenger"
+        ],
+        "operationId": "apigetlistchallengeruploadforuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/challenger/listProgramApproval": {
+      "get": {
+        "description": "{{url}}/offline/challenger",
+        "summary": "api get list challenger approval for user",
+        "tags": [
+          "Challenger"
+        ],
+        "operationId": "apigetlistchallengerapprovalforuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/upload/create": {
+      "post": {
+        "summary": "Create upload on type season",
+        "tags": [
+          "Upload"
+        ],
+        "operationId": "Createuploadontypeseason",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateuploadontypeseasonRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/upload": {
+      "get": {
+        "summary": "Get list upload belong to user",
+        "tags": [
+          "Upload"
+        ],
+        "operationId": "Getlistuploadbelongtouser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/upload/5f9bc328d45bd40924b301f7": {
+      "put": {
+        "summary": "Update upload for user",
+        "tags": [
+          "Upload"
+        ],
+        "operationId": "Updateuploadforuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UpdateuploadforuserRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/upload/5f754c3631aaeb4e8bc7b609": {
+      "get": {
+        "description": "{{url}}/offline/challenger/5f62df7735e860e7ac9caecf",
+        "summary": "api get detail upload for user",
+        "tags": [
+          "Upload"
+        ],
+        "operationId": "apigetdetailuploadforuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/category-manage": {
+      "get": {
+        "description": "{{url}}/offline/category-manage/",
+        "summary": "api get list category manage",
+        "tags": [
+          "category manage"
+        ],
+        "operationId": "apigetlistcategorymanage",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/category-manage/5fa919643eeb865eb4c2e82d": {
+      "get": {
+        "description": "{{url}}/offline/category-manage/5fa919643eeb865eb4c2e82d",
+        "summary": "api get detail category manage",
+        "tags": [
+          "category manage"
+        ],
+        "operationId": "apigetdetailcategorymanage",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "apicreatechallengeronofflinetypestandalonerequest": {
+      "title": "apicreatechallengeronofflinetypestandalonerequest",
+      "example": {
+        "programName": "program-set-11",
+        "programTitle": "super battle",
+        "programImageTitle": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programSubTitle": "DC battle marvel",
+        "programImagePoster": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programImageBracter": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programSummary": "DC and marvel are together fighting the monster",
+        "programCategory": {
+          "categoryManageId": "5fa91d1bca45ac674dc9fff8",
+          "categoryArrayTag": [
+            "5fa913b862b7b45cee7046a4",
+            "5fa915063eeb865eb4c2e821",
+            "5fa916b73eeb865eb4c2e822",
+            "5fa916ce3eeb865eb4c2e823",
+            "5fa9172d3eeb865eb4c2e824",
+            "5fa9177a3eeb865eb4c2e825",
+            "5fa917873eeb865eb4c2e826",
+            "5fa9179d3eeb865eb4c2e827",
+            "5fa917ad3eeb865eb4c2e828",
+            "5fa917b93eeb865eb4c2e829",
+            "5fa917c13eeb865eb4c2e82a",
+            "5fa917da3eeb865eb4c2e82b",
+            "5fa917f23eeb865eb4c2e82c",
+            "5fa91c61fffa646645c06737",
+            "5fa92344c82c046d67873099",
+            "5fa924c9c82c046d6787309a",
+            "5faa07cca114d9e4522ffc82",
+            "5faa07f9a114d9e4522ffc83"
+          ]
+        },
+        "programElement": [
+          {
+            "elementName": "violence",
+            "elementValue": "a little"
+          },
+          {
+            "elementName": "sexuality",
+            "elementValue": "none"
+          },
+          {
+            "elementName": "language",
+            "elementValue": "plenty"
+          }
+        ],
+        "programParticipants": [
+          {
+            "nameType": "Director",
+            "dataType": [
+              "rick",
+              "joe"
+            ]
+          },
+          {
+            "nameType": "Main Actor",
+            "dataType": [
+              "jax",
+              "matthew"
+            ]
+          },
+          {
+            "nameType": "Creator",
+            "dataType": [
+              "jin",
+              "lee"
+            ]
+          }
+        ],
+        "programTypeVideo": "stand alone",
+        "programEpisodeSummary": "batman cinema",
+        "programThumbnail": {
+          "thumbnailSetting": 20,
+          "thumbnailImage": ""
+        },
+        "programMusicInfo": [
+          {
+            "musicName": "i win in your heart",
+            "musicArtist": "tony trungle"
+          },
+          {
+            "musicName": "i hate you",
+            "musicArtist": "adam levine"
+          }
+        ],
+        "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_7_preview.mp4"
+      },
+      "type": "object",
+      "properties": {
+        "programName": {
+          "type": "string"
+        },
+        "programTitle": {
+          "type": "string"
+        },
+        "programImageTitle": {
+          "type": "string"
+        },
+        "programSubTitle": {
+          "type": "string"
+        },
+        "programImagePoster": {
+          "type": "string"
+        },
+        "programImageBracter": {
+          "type": "string"
+        },
+        "programSummary": {
+          "type": "string"
+        },
+        "programCategory": {
+          "$ref": "#/definitions/ProgramCategory"
+        },
+        "programElement": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramElement"
+          }
+        },
+        "programParticipants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramParticipant"
+          }
+        },
+        "programTypeVideo": {
+          "type": "string"
+        },
+        "programEpisodeSummary": {
+          "type": "string"
+        },
+        "programThumbnail": {
+          "$ref": "#/definitions/ProgramThumbnail"
+        },
+        "programMusicInfo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramMusicInfo"
+          }
+        },
+        "linkVideo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "programName",
+        "programTitle",
+        "programImageTitle",
+        "programSubTitle",
+        "programImagePoster",
+        "programImageBracter",
+        "programSummary",
+        "programCategory",
+        "programElement",
+        "programParticipants",
+        "programTypeVideo",
+        "programEpisodeSummary",
+        "programThumbnail",
+        "programMusicInfo",
+        "linkVideo"
+      ]
+    },
+    "ProgramCategory": {
+      "title": "ProgramCategory",
+      "example": {
+        "categoryManageId": "5fa91d1bca45ac674dc9fff8",
+        "categoryArrayTag": [
+          "5fa913b862b7b45cee7046a4",
+          "5fa915063eeb865eb4c2e821",
+          "5fa916b73eeb865eb4c2e822",
+          "5fa916ce3eeb865eb4c2e823",
+          "5fa9172d3eeb865eb4c2e824",
+          "5fa9177a3eeb865eb4c2e825",
+          "5fa917873eeb865eb4c2e826",
+          "5fa9179d3eeb865eb4c2e827",
+          "5fa917ad3eeb865eb4c2e828",
+          "5fa917b93eeb865eb4c2e829",
+          "5fa917c13eeb865eb4c2e82a",
+          "5fa917da3eeb865eb4c2e82b",
+          "5fa917f23eeb865eb4c2e82c",
+          "5fa91c61fffa646645c06737",
+          "5fa92344c82c046d67873099",
+          "5fa924c9c82c046d6787309a",
+          "5faa07cca114d9e4522ffc82",
+          "5faa07f9a114d9e4522ffc83"
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "categoryManageId": {
+          "type": "string"
+        },
+        "categoryArrayTag": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "categoryManageId",
+        "categoryArrayTag"
+      ]
+    },
+    "ProgramElement": {
+      "title": "ProgramElement",
+      "example": {
+        "elementName": "violence",
+        "elementValue": "a little"
+      },
+      "type": "object",
+      "properties": {
+        "elementName": {
+          "type": "string"
+        },
+        "elementValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "elementName",
+        "elementValue"
+      ]
+    },
+    "ProgramParticipant": {
+      "title": "ProgramParticipant",
+      "example": {
+        "nameType": "Director",
+        "dataType": [
+          "rick",
+          "joe"
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "nameType": {
+          "type": "string"
+        },
+        "dataType": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "nameType",
+        "dataType"
+      ]
+    },
+    "ProgramThumbnail": {
+      "title": "ProgramThumbnail",
+      "example": {
+        "thumbnailSetting": 20,
+        "thumbnailImage": ""
+      },
+      "type": "object",
+      "properties": {
+        "thumbnailSetting": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "thumbnailImage": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "thumbnailSetting",
+        "thumbnailImage"
+      ]
+    },
+    "ProgramMusicInfo": {
+      "title": "ProgramMusicInfo",
+      "example": {
+        "musicName": "i win in your heart",
+        "musicArtist": "tony trungle"
+      },
+      "type": "object",
+      "properties": {
+        "musicName": {
+          "type": "string"
+        },
+        "musicArtist": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "musicName",
+        "musicArtist"
+      ]
+    },
+    "apicreatechallengertypeseasonrequest": {
+      "title": "apicreatechallengertypeseasonrequest",
+      "example": {
+        "programName": "challenger test 19",
+        "programTitle": "Prison break",
+        "programImageTitle": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programSubTitle": "Prison break in usa",
+        "programImagePoster": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programImageBracter": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programSummary": "scofield want to help your brother freedom",
+        "programCategory": {
+          "categoryManageId": "5fa91d1bca45ac674dc9fff8",
+          "categoryArrayTag": [
+            "5fa913b862b7b45cee7046a4",
+            "5fa915063eeb865eb4c2e821",
+            "5fa916b73eeb865eb4c2e822",
+            "5fa916ce3eeb865eb4c2e823",
+            "5fa9172d3eeb865eb4c2e824",
+            "5fa9177a3eeb865eb4c2e825",
+            "5fa917873eeb865eb4c2e826",
+            "5fa9179d3eeb865eb4c2e827",
+            "5fa917ad3eeb865eb4c2e828",
+            "5fa917b93eeb865eb4c2e829",
+            "5fa917c13eeb865eb4c2e82a",
+            "5fa917da3eeb865eb4c2e82b",
+            "5fa917f23eeb865eb4c2e82c",
+            "5fa91c61fffa646645c06737",
+            "5fa92344c82c046d67873099",
+            "5fa924c9c82c046d6787309a",
+            "5faa07cca114d9e4522ffc82",
+            "5faa07f9a114d9e4522ffc83"
+          ]
+        },
+        "programElement": [
+          {
+            "elementName": "violence",
+            "elementValue": "a little"
+          },
+          {
+            "elementName": "sexuality",
+            "elementValue": "a little"
+          },
+          {
+            "elementName": "language",
+            "elementValue": "plenty"
+          }
+        ],
+        "programParticipants": [
+          {
+            "nameType": "Director",
+            "dataType": [
+              "Paul Scheuring",
+              "quang"
+            ]
+          },
+          {
+            "nameType": "Main Actor",
+            "dataType": [
+              "dominic Purcell",
+              "Wenworth Miller",
+              "Amaury Nolasco",
+              "Robert Knepper",
+              "Sarah Wayne"
+            ]
+          },
+          {
+            "nameType": "Creator",
+            "dataType": [
+              "Louis",
+              "Trang"
+            ]
+          }
+        ],
+        "programTypeVideo": "season",
+        "programSeasonData": [
+          {
+            "seasonName": 1,
+            "seasonEpisode": [
+              {
+                "episodeName": 1,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1551057444069_590.mp4"
+              },
+              {
+                "episodeName": 2,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1568597329672_954.mp4"
+              },
+              {
+                "episodeName": 3,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_OMN+universe+3rd.mp4"
+              }
+            ]
+          },
+          {
+            "seasonName": 2,
+            "seasonEpisode": [
+              {
+                "episodeName": 1,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_N_Preview.mp4"
+              },
+              {
+                "episodeName": 2,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1566735204584_644.mp4"
+              },
+              {
+                "episodeName": 3,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_7_preview.mp4"
+              }
+            ]
+          }
+        ],
+        "programThumbnail": {
+          "thumbnailSetting": 20,
+          "thumbnailImage": ""
+        },
+        "programEpisodeSummary": "batman",
+        "programMusicInfo": [
+          {
+            "musicName": "OST prison break",
+            "musicArtist": "adam lambert"
+          },
+          {
+            "musicName": "without you",
+            "musicArtist": "selena"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "programName": {
+          "type": "string"
+        },
+        "programTitle": {
+          "type": "string"
+        },
+        "programImageTitle": {
+          "type": "string"
+        },
+        "programSubTitle": {
+          "type": "string"
+        },
+        "programImagePoster": {
+          "type": "string"
+        },
+        "programImageBracter": {
+          "type": "string"
+        },
+        "programSummary": {
+          "type": "string"
+        },
+        "programCategory": {
+          "$ref": "#/definitions/ProgramCategory"
+        },
+        "programElement": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramElement"
+          }
+        },
+        "programParticipants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramParticipant"
+          }
+        },
+        "programTypeVideo": {
+          "type": "string"
+        },
+        "programSeasonData": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramSeasonDatum"
+          }
+        },
+        "programThumbnail": {
+          "$ref": "#/definitions/ProgramThumbnail"
+        },
+        "programEpisodeSummary": {
+          "type": "string"
+        },
+        "programMusicInfo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramMusicInfo"
+          }
+        }
+      },
+      "required": [
+        "programName",
+        "programTitle",
+        "programImageTitle",
+        "programSubTitle",
+        "programImagePoster",
+        "programImageBracter",
+        "programSummary",
+        "programCategory",
+        "programElement",
+        "programParticipants",
+        "programTypeVideo",
+        "programSeasonData",
+        "programThumbnail",
+        "programEpisodeSummary",
+        "programMusicInfo"
+      ]
+    },
+    "ProgramSeasonDatum": {
+      "title": "ProgramSeasonDatum",
+      "example": {
+        "seasonName": 1,
+        "seasonEpisode": [
+          {
+            "episodeName": 1,
+            "episodeSummary": "",
+            "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1551057444069_590.mp4"
+          },
+          {
+            "episodeName": 2,
+            "episodeSummary": "",
+            "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1568597329672_954.mp4"
+          },
+          {
+            "episodeName": 3,
+            "episodeSummary": "",
+            "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_OMN+universe+3rd.mp4"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "seasonName": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "seasonEpisode": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SeasonEpisode"
+          }
+        }
+      },
+      "required": [
+        "seasonName",
+        "seasonEpisode"
+      ]
+    },
+    "SeasonEpisode": {
+      "title": "SeasonEpisode",
+      "example": {
+        "episodeName": 1,
+        "episodeSummary": "",
+        "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1551057444069_590.mp4"
+      },
+      "type": "object",
+      "properties": {
+        "episodeName": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "episodeSummary": {
+          "type": "string"
+        },
+        "linkVideo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "episodeName",
+        "episodeSummary",
+        "linkVideo"
+      ]
+    },
+    "UpdatechallangerforuserRequest": {
+      "title": "UpdatechallangerforuserRequest",
+      "example": {
+        "programCurrentStatus": "edit"
+      },
+      "type": "object",
+      "properties": {
+        "programCurrentStatus": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "programCurrentStatus"
+      ]
+    },
+    "CreateuploadontypeseasonRequest": {
+      "title": "CreateuploadontypeseasonRequest",
+      "example": {
+        "programName": "Test challenger 05012021 025",
+        "programTitle": "Prison break",
+        "programImageTitle": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programSubTitle": "Prison break in usa",
+        "programImagePoster": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programImageBracter": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programSummary": "scofield want to help your brother freedom",
+        "programCategory": {
+          "categoryManageId": "5fa91d1bca45ac674dc9fff8",
+          "categoryArrayTag": [
+            "5fa913b862b7b45cee7046a4",
+            "5fa915063eeb865eb4c2e821",
+            "5fa916b73eeb865eb4c2e822",
+            "5fa916ce3eeb865eb4c2e823",
+            "5fa9172d3eeb865eb4c2e824",
+            "5fa9177a3eeb865eb4c2e825",
+            "5fa917873eeb865eb4c2e826",
+            "5fa9179d3eeb865eb4c2e827",
+            "5fa917ad3eeb865eb4c2e828",
+            "5fa917b93eeb865eb4c2e829",
+            "5fa917c13eeb865eb4c2e82a",
+            "5fa917da3eeb865eb4c2e82b",
+            "5fa917f23eeb865eb4c2e82c",
+            "5fa91c61fffa646645c06737",
+            "5fa92344c82c046d67873099",
+            "5fa924c9c82c046d6787309a",
+            "5faa07cca114d9e4522ffc82",
+            "5faa07f9a114d9e4522ffc83"
+          ]
+        },
+        "programElement": [
+          {
+            "elementName": "violence",
+            "elementValue": "a little"
+          },
+          {
+            "elementName": "sexuality",
+            "elementValue": "a little"
+          },
+          {
+            "elementName": "language",
+            "elementValue": "plenty"
+          }
+        ],
+        "programParticipants": [
+          {
+            "nameType": "Director",
+            "dataType": [
+              "Paul Scheuring",
+              "quang"
+            ]
+          },
+          {
+            "nameType": "Main Actor",
+            "dataType": [
+              "dominic Purcell",
+              "Wenworth Miller",
+              "Amaury Nolasco",
+              "Robert Knepper",
+              "Sarah Wayne"
+            ]
+          },
+          {
+            "nameType": "Creator",
+            "dataType": [
+              "Louis",
+              "Trang"
+            ]
+          }
+        ],
+        "programTypeVideo": "season",
+        "programSeasonData": [
+          {
+            "seasonName": 1,
+            "seasonEpisode": [
+              {
+                "episodeName": 1,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1551057444069_590.mp4"
+              },
+              {
+                "episodeName": 2,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1568597329672_954.mp4"
+              },
+              {
+                "episodeName": 3,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_OMN+universe+3rd.mp4"
+              }
+            ]
+          },
+          {
+            "seasonName": 2,
+            "seasonEpisode": [
+              {
+                "episodeName": 1,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_N_Preview.mp4"
+              },
+              {
+                "episodeName": 2,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Upload/14_12_2020/1566735204584_644.mp4"
+              },
+              {
+                "episodeName": 3,
+                "episodeSummary": "",
+                "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_7_preview.mp4"
+              }
+            ]
+          }
+        ],
+        "programThumbnail": {
+          "thumbnailSetting": 20,
+          "thumbnailImage": ""
+        },
+        "programEpisodeSummary": "batman",
+        "programMusicInfo": [
+          {
+            "musicName": "OST prison break",
+            "musicArtist": "adam lambert"
+          },
+          {
+            "musicName": "without you",
+            "musicArtist": "selena"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "programName": {
+          "type": "string"
+        },
+        "programTitle": {
+          "type": "string"
+        },
+        "programImageTitle": {
+          "type": "string"
+        },
+        "programSubTitle": {
+          "type": "string"
+        },
+        "programImagePoster": {
+          "type": "string"
+        },
+        "programImageBracter": {
+          "type": "string"
+        },
+        "programSummary": {
+          "type": "string"
+        },
+        "programCategory": {
+          "$ref": "#/definitions/ProgramCategory"
+        },
+        "programElement": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramElement"
+          }
+        },
+        "programParticipants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramParticipant"
+          }
+        },
+        "programTypeVideo": {
+          "type": "string"
+        },
+        "programSeasonData": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramSeasonDatum"
+          }
+        },
+        "programThumbnail": {
+          "$ref": "#/definitions/ProgramThumbnail"
+        },
+        "programEpisodeSummary": {
+          "type": "string"
+        },
+        "programMusicInfo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramMusicInfo"
+          }
+        }
+      },
+      "required": [
+        "programName",
+        "programTitle",
+        "programImageTitle",
+        "programSubTitle",
+        "programImagePoster",
+        "programImageBracter",
+        "programSummary",
+        "programCategory",
+        "programElement",
+        "programParticipants",
+        "programTypeVideo",
+        "programSeasonData",
+        "programThumbnail",
+        "programEpisodeSummary",
+        "programMusicInfo"
+      ]
+    },
+    "apicreateuploadontypestandalonerequest": {
+      "title": "apicreateuploadontypestandalonerequest",
+      "example": {
+        "programName": "Test challenger 05012021 030",
+        "programTitle": "super battle",
+        "programImageTitle": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programSubTitle": "DC battle marvel",
+        "programImagePoster": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programImageBracter": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Black_Widow_November_6_Poster.jpg",
+        "programSummary": "DC and marvel are together fighting the monster",
+        "programCategory": {
+          "categoryManageId": "5fa91d1bca45ac674dc9fff8",
+          "categoryArrayTag": [
+            "5fa913b862b7b45cee7046a4",
+            "5fa915063eeb865eb4c2e821",
+            "5fa916b73eeb865eb4c2e822",
+            "5fa916ce3eeb865eb4c2e823",
+            "5fa9172d3eeb865eb4c2e824",
+            "5fa9177a3eeb865eb4c2e825",
+            "5fa917873eeb865eb4c2e826",
+            "5fa9179d3eeb865eb4c2e827",
+            "5fa917ad3eeb865eb4c2e828",
+            "5fa917b93eeb865eb4c2e829",
+            "5fa917c13eeb865eb4c2e82a",
+            "5fa917da3eeb865eb4c2e82b",
+            "5fa917f23eeb865eb4c2e82c",
+            "5fa91c61fffa646645c06737",
+            "5fa92344c82c046d67873099",
+            "5fa924c9c82c046d6787309a",
+            "5faa07cca114d9e4522ffc82",
+            "5faa07f9a114d9e4522ffc83"
+          ]
+        },
+        "programElement": [
+          {
+            "elementName": "violence",
+            "elementValue": "a little"
+          },
+          {
+            "elementName": "sexuality",
+            "elementValue": "none"
+          },
+          {
+            "elementName": "language",
+            "elementValue": "plenty"
+          }
+        ],
+        "programParticipants": [
+          {
+            "nameType": "Director",
+            "dataType": [
+              "rick",
+              "joe"
+            ]
+          },
+          {
+            "nameType": "Main Actor",
+            "dataType": [
+              "jax",
+              "matthew"
+            ]
+          },
+          {
+            "nameType": "Creator",
+            "dataType": [
+              "jin",
+              "lee"
+            ]
+          }
+        ],
+        "programTypeVideo": "stand alone",
+        "programEpisodeSummary": "batman cinema",
+        "programThumbnail": {
+          "thumbnailSetting": 20,
+          "thumbnailImage": ""
+        },
+        "programMusicInfo": [
+          {
+            "musicName": "i win in your heart",
+            "musicArtist": "tony trungle"
+          },
+          {
+            "musicName": "i hate you",
+            "musicArtist": "adam levine"
+          }
+        ],
+        "linkVideo": "https://omn-video-input.s3.ap-northeast-2.amazonaws.com/Challenger/11_12_2020/1080p_7_preview.mp4"
+      },
+      "type": "object",
+      "properties": {
+        "programName": {
+          "type": "string"
+        },
+        "programTitle": {
+          "type": "string"
+        },
+        "programImageTitle": {
+          "type": "string"
+        },
+        "programSubTitle": {
+          "type": "string"
+        },
+        "programImagePoster": {
+          "type": "string"
+        },
+        "programImageBracter": {
+          "type": "string"
+        },
+        "programSummary": {
+          "type": "string"
+        },
+        "programCategory": {
+          "$ref": "#/definitions/ProgramCategory"
+        },
+        "programElement": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramElement"
+          }
+        },
+        "programParticipants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramParticipant"
+          }
+        },
+        "programTypeVideo": {
+          "type": "string"
+        },
+        "programEpisodeSummary": {
+          "type": "string"
+        },
+        "programThumbnail": {
+          "$ref": "#/definitions/ProgramThumbnail"
+        },
+        "programMusicInfo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramMusicInfo"
+          }
+        },
+        "linkVideo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "programName",
+        "programTitle",
+        "programImageTitle",
+        "programSubTitle",
+        "programImagePoster",
+        "programImageBracter",
+        "programSummary",
+        "programCategory",
+        "programElement",
+        "programParticipants",
+        "programTypeVideo",
+        "programEpisodeSummary",
+        "programThumbnail",
+        "programMusicInfo",
+        "linkVideo"
+      ]
+    },
+    "UpdateuploadforuserRequest": {
+      "title": "UpdateuploadforuserRequest",
+      "example": {
+        "programCategory": {
+          "categoryData": [
+            "Action",
+            "thriller"
+          ],
+          "categoryName": "movie"
+        },
+        "programThumbnail": {
+          "thumbnailSetting": 20,
+          "thumbnailImage": ""
+        },
+        "programImageTitle": "",
+        "programImageSubTitle": "",
+        "programTypeVideo": "season",
+        "programCurrentStatus": "deleted",
+        "programEditor": 0,
+        "programTotalView": 0,
+        "programName": "challenger-abc",
+        "programTitle": "Prison break",
+        "programSubTitle": "Prison break in usa",
+        "programSummary": "scofield want to help your brother freedom",
+        "programElement": [
+          {
+            "elementName": "violence",
+            "elementValue": "a little",
+            "_id": "5f9bc328d45bd40924b301f8"
+          },
+          {
+            "elementName": "sexuality",
+            "elementValue": "a little",
+            "_id": "5f9bc328d45bd40924b301f9"
+          },
+          {
+            "elementName": "language",
+            "elementValue": "plenty",
+            "_id": "5f9bc328d45bd40924b301fa"
+          }
+        ],
+        "programParticipants": [
+          {
+            "dataType": [
+              "Paul Scheuring",
+              "quang"
+            ],
+            "_id": "5f9bc328d45bd40924b301fb",
+            "nameType": "Director"
+          },
+          {
+            "dataType": [
+              "dominic Purcell",
+              "Wenworth Miller",
+              "Amaury Nolasco",
+              "Robert Knepper",
+              "Sarah Wayne"
+            ],
+            "_id": "5f9bc328d45bd40924b301fc",
+            "nameType": "Main Actor"
+          },
+          {
+            "dataType": [
+              "Louis",
+              "Trang"
+            ],
+            "_id": "5f9bc328d45bd40924b301fd",
+            "nameType": "Creator"
+          }
+        ],
+        "programSeasonData": [
+          {
+            "seasonEpisode": [
+              {
+                "_id": "5f9bc328d45bd40924b301ff",
+                "episodeName": 1,
+                "episodeSummary": "",
+                "episodeVideo": "/admin/challenger/movie/prison-break-1"
+              },
+              {
+                "_id": "5f9bc328d45bd40924b30200",
+                "episodeName": 2,
+                "episodeSummary": "",
+                "episodeVideo": "/admin/challenger/movie/prison-break-2"
+              },
+              {
+                "_id": "5f9bc328d45bd40924b30201",
+                "episodeName": 3,
+                "episodeSummary": "",
+                "episodeVideo": "/admin/challenger/movie/prison-break-3"
+              }
+            ],
+            "_id": "5f9bc328d45bd40924b301fe",
+            "seasonName": 1
+          },
+          {
+            "seasonEpisode": [
+              {
+                "_id": "5f9bc328d45bd40924b30203",
+                "episodeName": 1,
+                "episodeSummary": "",
+                "episodeVideo": "/admin/challenger/movie/prison-break-season-2-episode-1"
+              },
+              {
+                "_id": "5f9bc328d45bd40924b30204",
+                "episodeName": 2,
+                "episodeSummary": "",
+                "episodeVideo": "/admin/challenger/movie/prison-break-season-2-episode-2"
+              },
+              {
+                "_id": "5f9bc328d45bd40924b30205",
+                "episodeName": 3,
+                "episodeSummary": "",
+                "episodeVideo": "/admin/challenger/movie/prison-break-season-2-episode-3"
+              }
+            ],
+            "_id": "5f9bc328d45bd40924b30202",
+            "seasonName": 2
+          }
+        ],
+        "programMusicInfo": [
+          {
+            "_id": "5f9bc328d45bd40924b30206",
+            "musicName": "OST prison break",
+            "musicArtist": "adam lambert"
+          },
+          {
+            "_id": "5f9bc328d45bd40924b30207",
+            "musicName": "without you",
+            "musicArtist": "selena"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "programCategory": {
+          "$ref": "#/definitions/ProgramCategory4"
+        },
+        "programThumbnail": {
+          "$ref": "#/definitions/ProgramThumbnail"
+        },
+        "programImageTitle": {
+          "type": "string"
+        },
+        "programImageSubTitle": {
+          "type": "string"
+        },
+        "programTypeVideo": {
+          "type": "string"
+        },
+        "programCurrentStatus": {
+          "type": "string"
+        },
+        "programEditor": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "programTotalView": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "programName": {
+          "type": "string"
+        },
+        "programTitle": {
+          "type": "string"
+        },
+        "programSubTitle": {
+          "type": "string"
+        },
+        "programSummary": {
+          "type": "string"
+        },
+        "programElement": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramElement4"
+          }
+        },
+        "programParticipants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramParticipant4"
+          }
+        },
+        "programSeasonData": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramSeasonDatum2"
+          }
+        },
+        "programMusicInfo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProgramMusicInfo4"
+          }
+        }
+      },
+      "required": [
+        "programCategory",
+        "programThumbnail",
+        "programImageTitle",
+        "programImageSubTitle",
+        "programTypeVideo",
+        "programCurrentStatus",
+        "programEditor",
+        "programTotalView",
+        "programName",
+        "programTitle",
+        "programSubTitle",
+        "programSummary",
+        "programElement",
+        "programParticipants",
+        "programSeasonData",
+        "programMusicInfo"
+      ]
+    },
+    "ProgramCategory4": {
+      "title": "ProgramCategory4",
+      "example": {
+        "categoryData": [
+          "Action",
+          "thriller"
+        ],
+        "categoryName": "movie"
+      },
+      "type": "object",
+      "properties": {
+        "categoryData": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "categoryName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "categoryData",
+        "categoryName"
+      ]
+    },
+    "ProgramElement4": {
+      "title": "ProgramElement4",
+      "example": {
+        "elementName": "violence",
+        "elementValue": "a little",
+        "_id": "5f9bc328d45bd40924b301f8"
+      },
+      "type": "object",
+      "properties": {
+        "elementName": {
+          "type": "string"
+        },
+        "elementValue": {
+          "type": "string"
+        },
+        "_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "elementName",
+        "elementValue",
+        "_id"
+      ]
+    },
+    "ProgramParticipant4": {
+      "title": "ProgramParticipant4",
+      "example": {
+        "dataType": [
+          "Paul Scheuring",
+          "quang"
+        ],
+        "_id": "5f9bc328d45bd40924b301fb",
+        "nameType": "Director"
+      },
+      "type": "object",
+      "properties": {
+        "dataType": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "nameType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataType",
+        "_id",
+        "nameType"
+      ]
+    },
+    "ProgramSeasonDatum2": {
+      "title": "ProgramSeasonDatum2",
+      "example": {
+        "seasonEpisode": [
+          {
+            "_id": "5f9bc328d45bd40924b301ff",
+            "episodeName": 1,
+            "episodeSummary": "",
+            "episodeVideo": "/admin/challenger/movie/prison-break-1"
+          },
+          {
+            "_id": "5f9bc328d45bd40924b30200",
+            "episodeName": 2,
+            "episodeSummary": "",
+            "episodeVideo": "/admin/challenger/movie/prison-break-2"
+          },
+          {
+            "_id": "5f9bc328d45bd40924b30201",
+            "episodeName": 3,
+            "episodeSummary": "",
+            "episodeVideo": "/admin/challenger/movie/prison-break-3"
+          }
+        ],
+        "_id": "5f9bc328d45bd40924b301fe",
+        "seasonName": 1
+      },
+      "type": "object",
+      "properties": {
+        "seasonEpisode": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SeasonEpisode2"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "seasonName": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "seasonEpisode",
+        "_id",
+        "seasonName"
+      ]
+    },
+    "SeasonEpisode2": {
+      "title": "SeasonEpisode2",
+      "example": {
+        "_id": "5f9bc328d45bd40924b301ff",
+        "episodeName": 1,
+        "episodeSummary": "",
+        "episodeVideo": "/admin/challenger/movie/prison-break-1"
+      },
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "episodeName": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "episodeSummary": {
+          "type": "string"
+        },
+        "episodeVideo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "episodeName",
+        "episodeSummary",
+        "episodeVideo"
+      ]
+    },
+    "ProgramMusicInfo4": {
+      "title": "ProgramMusicInfo4",
+      "example": {
+        "_id": "5f9bc328d45bd40924b30206",
+        "musicName": "OST prison break",
+        "musicArtist": "adam lambert"
+      },
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "musicName": {
+          "type": "string"
+        },
+        "musicArtist": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "musicName",
+        "musicArtist"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Challenger"
+    },
+    {
+      "name": "Upload"
+    },
+    {
+      "name": "category manage"
+    }
+  ]
+}

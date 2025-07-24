@@ -1,0 +1,92 @@
+const HistoryEditProgram = {
+	notFound: function (id) {
+		return 'Not found id: ' + id + ' in HistoryEditProgram!!!';
+	},
+	msgDeleteHistoryEditProgram: function (id) {
+		return 'Deleted successfully _id: ' + id + ' in HistoryEditProgram!!!';
+	},
+	msgUpdateHistoryEditProgram: function (id) {
+		return 'Updated successfully _id ' + id + ' in HistoryEditProgram!!!';
+	},
+	permissionError: 'Permission error, please contact admin',
+	errorUpdate: 'Updated fail, please contact admin!!!',
+	msgProgram: 'Program in process',
+	msgEditStatus: 'Status is edit!',
+	invalidData: 'Data invalid, please check again',
+
+	fieldsCreate: [
+		'_id',
+		'programName',
+		'programImageTitle',
+		'programSubTitle',
+		'programImagePoster',
+		'programImageBracter',
+		'programImagePosterNoTitle',
+		'programSummary',
+		'programCategory',
+		'programElement',
+		'programParticipants',
+		'programThumbnail',
+		'programVideoSetting',
+		'programMusicInfo',
+		'programEpisodeSummary',
+		'programChildrenSeasonData',
+		'linkVideo',
+		'programTypeVideo'
+	],
+	fieldsCreateStandAlone: [
+		'programName',
+		'programImageTitle',
+		'programSubTitle',
+		'programImagePosterNoTitle',
+		'programImagePoster',
+		'programImageBracter',
+		'programSummary',
+		'programCategory',
+		'programElement',
+		'programParticipants',
+		'programThumbnail',
+		'programMusicInfo',
+		'programEpisodeSummary',
+		'linkVideo',
+		'programVideoSetting',
+		'programTypeVideo'
+	],
+
+	fieldsHistoryEditProgram: [
+		'programName',
+		'programImageTitle',
+		'programSubTitle',
+		'programImagePoster',
+		'programImageBracter',
+		'programImagePosterNoTitle',
+		'programSummary',
+		'programCategory',
+		'programElement',
+		'programParticipants',
+		'programThumbnail',
+		'programVideoSetting',
+		'programMusicInfo',
+		'programEpisodeSummary',
+		'programChildrenSeasonData',
+		'linkVideo',
+	],
+	fieldsHistoryEditProgramStandAlone: [
+		'programName',
+		'programImageTitle',
+		'programSubTitle',
+		'programImagePosterNoTitle',
+		'programImagePoster',
+		'programImageBracter',
+		'programSummary',
+		'programCategory',
+		'programElement',
+		'programParticipants',
+		'programThumbnail',
+		'programMusicInfo',
+		'programEpisodeSummary',
+		'linkVideo',
+		'programVideoSetting',
+	],
+};
+module.exports = HistoryEditProgram;

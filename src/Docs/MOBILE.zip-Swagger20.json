@@ -1,0 +1,141 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "OMN_MOBILE",
+    "contact": {}
+  },
+  "host": "api.omnadmin.xyz",
+  "basePath": "/mobile",
+  "securityDefinitions": {},
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/categories": {
+      "get": {
+        "summary": "Get categories",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getcategories",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/category/5f96d1741835a7f018b77652": {
+      "get": {
+        "summary": "Get list in category",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getlistincategory",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/list/5f755e1431aaeb4e8bc7b625": {
+      "get": {
+        "summary": "Get programs in list",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getprogramsinlist",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/home-set": {
+      "get": {
+        "description": "{{url}}/mobile/home-set",
+        "summary": "api mobile homeset",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "apimobilehomeset",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}

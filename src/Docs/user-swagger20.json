@@ -1,0 +1,5337 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "OMN_USER",
+    "contact": {}
+  },
+  "host": "13.209.212.38:3000",
+  "basePath": "/",
+  "securityDefinitions": {},
+  "schemes": [],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/user/membership": {
+      "get": {
+        "description": "{{url}}/user/membership/",
+        "summary": "api get list member for the client",
+        "tags": [
+          "membership"
+        ],
+        "operationId": "apigetlistmemberfortheclient",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/membership/5f747190b763a0d000732a2f": {
+      "get": {
+        "description": "{{url}}/user/membership/5f729f01983a74c059c643fc",
+        "summary": "api get detail  membership for client",
+        "tags": [
+          "membership"
+        ],
+        "operationId": "apigetdetailmembershipforclient",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/company-information": {
+      "get": {
+        "description": "{{url}}/user/company-information/",
+        "summary": "api get list company-information",
+        "tags": [
+          "company-information"
+        ],
+        "operationId": "apigetlistcompany-information",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/company-information/5f7a8c7d05ddc0bfb60eed14": {
+      "get": {
+        "description": "{{url}}/user/company-information/5f7a8c7d05ddc0bfb60eed14",
+        "summary": "api get detail data company-information for user",
+        "tags": [
+          "company-information"
+        ],
+        "operationId": "apigetdetaildatacompany-informationforuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/privacy-policy": {
+      "get": {
+        "description": "{{url}}/user/privacy-policy/",
+        "summary": "api get list privacy-policy",
+        "tags": [
+          "privacy-policy"
+        ],
+        "operationId": "apigetlistprivacy-policy",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/privacy-policy/5f7a7d48362b7c9c71a11c39": {
+      "get": {
+        "description": "{{url}}/user/privacy-policy/5f7a7d48362b7c9c71a11c39",
+        "summary": "api get detail privacy-policy",
+        "tags": [
+          "privacy-policy"
+        ],
+        "operationId": "apigetdetailprivacy-policy",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/terms-and-conditions": {
+      "get": {
+        "description": "{{url}}/user/terms-and-conditions/",
+        "summary": "api get list terms and conditions",
+        "tags": [
+          "terms-and-conditions"
+        ],
+        "operationId": "apigetlisttermsandconditions",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/terms-and-conditions/5f7ae5b5f412612c145d03fe": {
+      "get": {
+        "description": "{{url}}/user/terms-and-conditions/5f7a96e7d16811d25ca1ea62",
+        "summary": "api get detail data terms and conditions",
+        "tags": [
+          "terms-and-conditions"
+        ],
+        "operationId": "apigetdetaildatatermsandconditions",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/video-manage-policy": {
+      "get": {
+        "description": "{{url}}/user/video-manage-policy/",
+        "summary": "api get list video manage policy",
+        "tags": [
+          "video-manage-policy"
+        ],
+        "operationId": "apigetlistvideomanagepolicy",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/video-manage-policy/5f7ae371f412612c145d03fd": {
+      "get": {
+        "description": "{{url}}/user/video-manage-policy/5f7ae371f412612c145d03fd",
+        "summary": "api get detail video manage policy",
+        "tags": [
+          "video-manage-policy"
+        ],
+        "operationId": "apigetdetailvideomanagepolicy",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/check-email": {
+      "post": {
+        "description": "{{url}}/user/check-email",
+        "summary": "api check email",
+        "tags": [
+          "email"
+        ],
+        "operationId": "apicheckemail",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apicheckemailrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/send-otp-email": {
+      "post": {
+        "description": "{{url}}/user/send-otp-email",
+        "summary": "api send opt via email",
+        "tags": [
+          "email"
+        ],
+        "operationId": "apisendoptviaemail",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apisendoptviaemailrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/check-otp-email": {
+      "post": {
+        "description": "{{url}}/user/check-otp-email",
+        "summary": "api check OTP of email",
+        "tags": [
+          "email"
+        ],
+        "operationId": "apicheckOTPofemail",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apicheckOTPofemailRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/reset-password-by-email": {
+      "put": {
+        "description": "{{url}}/user/reset-password",
+        "summary": "api reset password by email",
+        "tags": [
+          "email"
+        ],
+        "operationId": "apiresetpasswordbyemail",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apiresetpasswordbyemailrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/check-phone-number": {
+      "post": {
+        "description": "{{url}}/user/check-phone-number",
+        "summary": "api check phone number exist",
+        "tags": [
+          "phone number"
+        ],
+        "operationId": "apicheckphonenumberexist",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apicheckphonenumberexistrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/check-otp-phone-number": {
+      "post": {
+        "description": "{{url}}/user/check-opt-phone-number",
+        "summary": "api check OTP by phone number",
+        "tags": [
+          "phone number"
+        ],
+        "operationId": "apicheckOTPbyphonenumber",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apicheckOTPbyphonenumberRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/reset-password-by-phone-number": {
+      "put": {
+        "description": "{{url}}/user/reset-password-by-phone-number",
+        "summary": "api reset password by phone number",
+        "tags": [
+          "phone number"
+        ],
+        "operationId": "apiresetpasswordbyphonenumber",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apiresetpasswordbyphonenumberrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/check-pin-code": {
+      "post": {
+        "description": "{{url}}/user/check-pin-code",
+        "summary": "api check pin code",
+        "tags": [
+          "pin code"
+        ],
+        "operationId": "apicheckpincode",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apicheckpincoderequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/like/5f880004f6bbcc49547ec7f4": {
+      "get": {
+        "description": "{{url}}/admin/like/5f880004f6bbcc49547ec7f4",
+        "summary": "api like program",
+        "tags": [
+          "like & unlike"
+        ],
+        "operationId": "apilikeprogram",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/unlike/5f880004f6bbcc49547ec7f4": {
+      "get": {
+        "description": "{{url}}/user/unlike/5f880004f6bbcc49547ec7f4",
+        "summary": "api unlike program",
+        "tags": [
+          "like & unlike"
+        ],
+        "operationId": "apiunlikeprogram",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/deactive-plan": {
+      "get": {
+        "description": "{{url}}/user/deactive-plan",
+        "summary": "api deactive plan",
+        "tags": [
+          "deactive plan"
+        ],
+        "operationId": "apideactiveplan",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/change-password": {
+      "put": {
+        "description": "{{url}}/user/change-password",
+        "summary": "api change password",
+        "tags": [
+          "setting"
+        ],
+        "operationId": "apichangepassword",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apichangepasswordrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/change-phone-number": {
+      "put": {
+        "description": "{{url}}/user/phone-number",
+        "summary": "api chang phone number",
+        "tags": [
+          "setting"
+        ],
+        "operationId": "apichangphonenumber",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apichangphonenumberrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/me": {
+      "put": {
+        "description": "113.161.49.113:3000/user/5f699e087ad14427c1a0a816",
+        "summary": "api update data user",
+        "tags": [
+          "setting"
+        ],
+        "operationId": "apiupdatedatauser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apiupdatedatauserrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "get": {
+        "description": "113.161.49.113:3000/offline/user/5f6999dedb97581ff9392efe",
+        "summary": "api get detail data user",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apigetdetaildatauser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "description": "{{url}}/user/me",
+        "summary": "api delete user",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apideleteuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/register": {
+      "post": {
+        "description": "113.161.49.113:3000/offline/user/sign-up",
+        "summary": "api register user",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apiregisteruser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apiregisteruserrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/user/login": {
+      "post": {
+        "description": "113.161.49.113:3000/user/login",
+        "summary": "api login user",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apiloginuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apiloginuserrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/user/logout": {
+      "post": {
+        "description": "{{url}}/user/logout",
+        "summary": "api logout user",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apilogoutuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/logoutAll": {
+      "post": {
+        "description": "{{url}}/user/logoutAll",
+        "summary": "api logout user in multiple device",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apilogoutuserinmultipledevice",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/area-code/test": {
+      "post": {
+        "description": "{{url}}/user/area-code/test",
+        "summary": "api to test function",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apitotestfunction",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apitotestfunctionrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user": {
+      "get": {
+        "description": "113.161.49.113:3000/user/",
+        "summary": "api get list user",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apigetlistuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/area-code": {
+      "get": {
+        "description": "{{url}}/user/area-code/",
+        "summary": "api get list area code",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apigetlistareacode",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/delete-phone-number": {
+      "get": {
+        "description": "{{url}}/user/delete-phone-number",
+        "summary": "api delete phone number of user",
+        "tags": [
+          "user"
+        ],
+        "operationId": "apideletephonenumberofuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/categories-set": {
+      "get": {
+        "description": "{{url}}/user/categories-set/",
+        "summary": "api get survey",
+        "tags": [
+          "categories-set"
+        ],
+        "operationId": "apigetsurvey",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/recent-video": {
+      "get": {
+        "summary": "get list recent video",
+        "tags": [
+          "recent video"
+        ],
+        "operationId": "getlistrecentvideo",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "post": {
+        "summary": "add recent video for user",
+        "tags": [
+          "recent video"
+        ],
+        "operationId": "addrecentvideoforuser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/addrecentvideoforuserrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/push-notification/create": {
+      "post": {
+        "description": "{{url}}/user/push-notification/create",
+        "summary": "api create push notification",
+        "tags": [
+          "push-notification"
+        ],
+        "operationId": "apicreatepushnotification",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apicreatepushnotificationrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/push-notification": {
+      "get": {
+        "description": "{{url}}/user/push-notification/",
+        "summary": "api get list push notification",
+        "tags": [
+          "push-notification"
+        ],
+        "operationId": "apigetlistpushnotification",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user/push-notification/5fdb06148bb3117013a47658": {
+      "get": {
+        "description": "{{url}}/user/push-notification/5fdb06148bb3117013a47658",
+        "summary": "api get detail push notification",
+        "tags": [
+          "push-notification"
+        ],
+        "operationId": "apigetdetailpushnotification",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "put": {
+        "description": "{{url}}/user/push-notification/5fdb06148bb3117013a47658",
+        "summary": "api update puh notification",
+        "tags": [
+          "push-notification"
+        ],
+        "operationId": "apiupdatepuhnotification",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "apicheckemailrequest": {
+      "title": "apicheckemailrequest",
+      "example": {
+        "userEmail": "dev@brickmate.kr"
+      },
+      "type": "object",
+      "properties": {
+        "userEmail": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userEmail"
+      ]
+    },
+    "apisendoptviaemailrequest": {
+      "title": "apisendoptviaemailrequest",
+      "example": {
+        "userEmail": "tangquang@brickmate.kr"
+      },
+      "type": "object",
+      "properties": {
+        "userEmail": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userEmail"
+      ]
+    },
+    "apicheckOTPofemailRequest": {
+      "title": "apicheckOTPofemailRequest",
+      "example": {
+        "codeOTP": "8307",
+        "userEmail": "tangquang@brickmate.kr"
+      },
+      "type": "object",
+      "properties": {
+        "codeOTP": {
+          "type": "string"
+        },
+        "userEmail": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "codeOTP",
+        "userEmail"
+      ]
+    },
+    "apiresetpasswordbyemailrequest": {
+      "title": "apiresetpasswordbyemailrequest",
+      "example": {
+        "UUID": "d3cf1169-86b5-4683-a26b-e60162f952b4",
+        "userEmail": "tangquang@brickmate.kr",
+        "newPassword": "Quang!@#123",
+        "confirmPassword": "Quang!@#123"
+      },
+      "type": "object",
+      "properties": {
+        "UUID": {
+          "type": "string"
+        },
+        "userEmail": {
+          "type": "string"
+        },
+        "newPassword": {
+          "type": "string"
+        },
+        "confirmPassword": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "UUID",
+        "userEmail",
+        "newPassword",
+        "confirmPassword"
+      ]
+    },
+    "apicheckphonenumberexistrequest": {
+      "title": "apicheckphonenumberexistrequest",
+      "example": {
+        "idAreaCode": "5f9a483f65b9014e3e044973",
+        "areaCode": "+84",
+        "phoneNumber": "961842153"
+      },
+      "type": "object",
+      "properties": {
+        "idAreaCode": {
+          "type": "string"
+        },
+        "areaCode": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "idAreaCode",
+        "areaCode",
+        "phoneNumber"
+      ]
+    },
+    "apicheckOTPbyphonenumberRequest": {
+      "title": "apicheckOTPbyphonenumberRequest",
+      "example": {
+        "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNlNTQyN2NkMzUxMDhiNDc2NjUyMDhlYTA0YjhjYTZjODZkMDljOTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb21uLWFwcGxpY2F0aW9uIiwiYXVkIjoib21uLWFwcGxpY2F0aW9uIiwiYXV0aF90aW1lIjoxNjA1Nzc0MzQ5LCJ1c2VyX2lkIjoiQTBxWDJsemRwM1ZrSTJMUnowRkRrSGJQa2E5MiIsInN1YiI6IkEwcVgybHpkcDNWa0kyTFJ6MEZEa0hiUGthOTIiLCJpYXQiOjE2MDU3NzQzNDksImV4cCI6MTYwNTc3Nzk0OSwicGhvbmVfbnVtYmVyIjoiKzg0OTYxODQyMTUzIiwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJwaG9uZSI6WyIrODQ5NjE4NDIxNTMiXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwaG9uZSJ9fQ.i61Yx8gf85rrTxoqbkGOv_8tgyjOxzD3an_Ht2w6JCukyuezyLXYstiiNDolQWcRaJxreCGZH-clBJp1T70BZuoJy-KnI1o4B1Zfwm6XyA1UFdgCBOq3ToFf4rONqgyNHxKzm_HyUzhyYtqjAXlFwnmpWkmf4L4kjAqXpuY3bgIXQNm6BoEDRPLEkDMQO1v1ZIZWSRvM6zv8Zfk_oaqfYaGb_AbG4EkokDBdhNCQyDgpAr7Vx8nOictftz0odFAJLkh-OCvGhsdAPX9KkAoxQ6VUEt1GkNWHhjHEDKuL36NkmRIR4RB0krJenrJzQirPdSQlvWjI1H6o8aqQzJChvq",
+        "idAreaCode": "5f9a483f65b9014e3e044973",
+        "phoneNumber": "961842153",
+        "areaCode": "+84"
+      },
+      "type": "object",
+      "properties": {
+        "idToken": {
+          "type": "string"
+        },
+        "idAreaCode": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "areaCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "idToken",
+        "idAreaCode",
+        "phoneNumber",
+        "areaCode"
+      ]
+    },
+    "apiresetpasswordbyphonenumberrequest": {
+      "title": "apiresetpasswordbyphonenumberrequest",
+      "example": {
+        "newPassword": "Quang!@#123",
+        "confirmPassword": "Quang!@#123",
+        "UUID": "a611bbb6-df24-43cb-af57-4dd5b2ef937b",
+        "idAreaCode": "5f9a483f65b9014e3e044973",
+        "phoneNumber": "961842153",
+        "areaCode": "+84"
+      },
+      "type": "object",
+      "properties": {
+        "newPassword": {
+          "type": "string"
+        },
+        "confirmPassword": {
+          "type": "string"
+        },
+        "UUID": {
+          "type": "string"
+        },
+        "idAreaCode": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "areaCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "newPassword",
+        "confirmPassword",
+        "UUID",
+        "idAreaCode",
+        "phoneNumber",
+        "areaCode"
+      ]
+    },
+    "apicheckpincoderequest": {
+      "title": "apicheckpincoderequest",
+      "example": {
+        "userPinCode": "1359"
+      },
+      "type": "object",
+      "properties": {
+        "userPinCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userPinCode"
+      ]
+    },
+    "apichangepasswordrequest": {
+      "title": "apichangepasswordrequest",
+      "example": {
+        "oldPassword": "Quanfasdfasfsdg!@#123",
+        "newPassword": "quang!@#123",
+        "confirmPassword": "quang!@#123",
+        "isLogoutAll": false
+      },
+      "type": "object",
+      "properties": {
+        "oldPassword": {
+          "type": "string"
+        },
+        "newPassword": {
+          "type": "string"
+        },
+        "confirmPassword": {
+          "type": "string"
+        },
+        "isLogoutAll": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "oldPassword",
+        "newPassword",
+        "confirmPassword",
+        "isLogoutAll"
+      ]
+    },
+    "apichangphonenumberrequest": {
+      "title": "apichangphonenumberrequest",
+      "example": {
+        "idAreaCode": "5f9a483f65b9014e3e044973",
+        "areaCode": "+84",
+        "phoneNumber": "459863965",
+        "currentPassword": "Dev!@#123"
+      },
+      "type": "object",
+      "properties": {
+        "idAreaCode": {
+          "type": "string"
+        },
+        "areaCode": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "currentPassword": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "idAreaCode",
+        "areaCode",
+        "phoneNumber",
+        "currentPassword"
+      ]
+    },
+    "apiupdatedatauserrequest": {
+      "title": "apiupdatedatauserrequest",
+      "example": {
+        "userCategoriesSet": []
+      },
+      "type": "object",
+      "properties": {
+        "userCategoriesSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "userCategoriesSet"
+      ]
+    },
+    "apiregisteruserrequest": {
+      "title": "apiregisteruserrequest",
+      "example": {
+        "userEmail": "tangquang@brickmate.kr",
+        "userPassword": "quang!@#123"
+      },
+      "type": "object",
+      "properties": {
+        "userEmail": {
+          "type": "string"
+        },
+        "userPassword": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userEmail",
+        "userPassword"
+      ]
+    },
+    "apiloginuserrequest": {
+      "title": "apiloginuserrequest",
+      "example": {
+        "userEmail": "dev@brickmate.kr",
+        "userPassword": "Dev!@#123",
+        "deviceToken": "",
+        "typeDevice": "android"
+      },
+      "type": "object",
+      "properties": {
+        "userEmail": {
+          "type": "string"
+        },
+        "userPassword": {
+          "type": "string"
+        },
+        "deviceToken": {
+          "type": "string"
+        },
+        "typeDevice": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userEmail",
+        "userPassword",
+        "deviceToken",
+        "typeDevice"
+      ]
+    },
+    "apitotestfunctionrequest": {
+      "title": "apitotestfunctionrequest",
+      "example": {
+        "data": [
+          {
+            "name": "American Samoa",
+            "domain": ".as",
+            "language": "American Samoan",
+            "capital": "Pago Pago",
+            "nativeName": "American Samoa",
+            "alpha2Code": "AS",
+            "alpha3Code": "ASM",
+            "areaCode": "+1684",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "ASA",
+            "flag": "https://restcountries.eu/data/asm.svg"
+          },
+          {
+            "name": "Australia",
+            "domain": ".au",
+            "language": "Australian",
+            "capital": "Canberra",
+            "nativeName": "Australia",
+            "alpha2Code": "AU",
+            "alpha3Code": "AUS",
+            "areaCode": "+61",
+            "region": "Oceania",
+            "subregion": "Australia and New Zealand",
+            "cioc": "AUS",
+            "flag": "https://restcountries.eu/data/aus.svg"
+          },
+          {
+            "name": "Antigua and Barbuda",
+            "domain": ".ag",
+            "language": "Antiguan, Barbudan",
+            "capital": "Saint John's",
+            "nativeName": "Antigua and Barbuda",
+            "alpha2Code": "AG",
+            "alpha3Code": "ATG",
+            "areaCode": "+1268",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "ANT",
+            "flag": "https://restcountries.eu/data/atg.svg"
+          },
+          {
+            "name": "United States Minor Outlying Islands",
+            "domain": ".us",
+            "language": "American",
+            "capital": "",
+            "nativeName": "United States Minor Outlying Islands",
+            "alpha2Code": "UM",
+            "alpha3Code": "UMI",
+            "areaCode": "+1581",
+            "region": "Americas",
+            "subregion": "Northern America",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/umi.svg"
+          },
+          {
+            "name": "Bonaire, Sint Eustatius and Saba",
+            "domain": ".an",
+            "language": "Dutch",
+            "capital": "Kralendijk",
+            "nativeName": "Bonaire",
+            "alpha2Code": "BQ",
+            "alpha3Code": "BES",
+            "areaCode": "+5997",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": null,
+            "flag": "https://restcountries.eu/data/bes.svg"
+          },
+          {
+            "name": "Bouvet Island",
+            "domain": ".bv",
+            "language": "",
+            "capital": "",
+            "nativeName": "Bouvetøya",
+            "alpha2Code": "BV",
+            "alpha3Code": "BVT",
+            "areaCode": "+55",
+            "region": "",
+            "subregion": "",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/bvt.svg"
+          },
+          {
+            "name": "Belarus",
+            "domain": ".by",
+            "language": "Belarusian",
+            "capital": "Minsk",
+            "nativeName": "Белару́сь",
+            "alpha2Code": "BY",
+            "alpha3Code": "BLR",
+            "areaCode": "+375",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "BLR",
+            "flag": "https://restcountries.eu/data/blr.svg"
+          },
+          {
+            "name": "Austria",
+            "domain": ".at",
+            "language": "Austrian",
+            "capital": "Vienna",
+            "nativeName": "Österreich",
+            "alpha2Code": "AT",
+            "alpha3Code": "AUT",
+            "areaCode": "+43",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "AUT",
+            "flag": "https://restcountries.eu/data/aut.svg"
+          },
+          {
+            "name": "Christmas Island",
+            "domain": ".cx",
+            "language": "Christmas Island",
+            "capital": "Flying Fish Cove",
+            "nativeName": "Christmas Island",
+            "alpha2Code": "CX",
+            "alpha3Code": "CXR",
+            "areaCode": "+61",
+            "region": "Oceania",
+            "subregion": "Australia and New Zealand",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/cxr.svg"
+          },
+          {
+            "name": "Azerbaijan",
+            "domain": ".az",
+            "language": "Azerbaijani",
+            "capital": "Baku",
+            "nativeName": "Azərbaycan",
+            "alpha2Code": "AZ",
+            "alpha3Code": "AZE",
+            "areaCode": "+994",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "AZE",
+            "flag": "https://restcountries.eu/data/aze.svg"
+          },
+          {
+            "name": "Bahamas",
+            "domain": ".bs",
+            "language": "Bahamian",
+            "capital": "Nassau",
+            "nativeName": "Bahamas",
+            "alpha2Code": "BS",
+            "alpha3Code": "BHS",
+            "areaCode": "+1242",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "BAH",
+            "flag": "https://restcountries.eu/data/bhs.svg"
+          },
+          {
+            "name": "Bangladesh",
+            "domain": ".bd",
+            "language": "Bangladeshi",
+            "capital": "Dhaka",
+            "nativeName": "Bangladesh",
+            "alpha2Code": "BD",
+            "alpha3Code": "BGD",
+            "areaCode": "+880",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "BAN",
+            "flag": "https://restcountries.eu/data/bgd.svg"
+          },
+          {
+            "name": "Canada",
+            "domain": ".ca",
+            "language": "Canadian",
+            "capital": "Ottawa",
+            "nativeName": "Canada",
+            "alpha2Code": "CA",
+            "alpha3Code": "CAN",
+            "areaCode": "+1",
+            "region": "Americas",
+            "subregion": "Northern America",
+            "cioc": "CAN",
+            "flag": "https://restcountries.eu/data/can.svg"
+          },
+          {
+            "name": "China",
+            "domain": ".cn",
+            "language": "Chinese",
+            "capital": "Beijing",
+            "nativeName": "中国",
+            "alpha2Code": "CN",
+            "alpha3Code": "CHN",
+            "areaCode": "+86",
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "cioc": "CHN",
+            "flag": "https://restcountries.eu/data/chn.svg"
+          },
+          {
+            "name": "Comoros",
+            "domain": ".km",
+            "language": "Comoran",
+            "capital": "Moroni",
+            "nativeName": "Komori",
+            "alpha2Code": "KM",
+            "alpha3Code": "COM",
+            "areaCode": "+269",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "COM",
+            "flag": "https://restcountries.eu/data/com.svg"
+          },
+          {
+            "name": "Curaçao",
+            "domain": ".cw",
+            "language": "Dutch",
+            "capital": "Willemstad",
+            "nativeName": "Curaçao",
+            "alpha2Code": "CW",
+            "alpha3Code": "CUW",
+            "areaCode": "+599",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/cuw.svg"
+          },
+          {
+            "name": "Brazil",
+            "domain": ".br",
+            "language": "Brazilian",
+            "capital": "Brasília",
+            "nativeName": "Brasil",
+            "alpha2Code": "BR",
+            "alpha3Code": "BRA",
+            "areaCode": "+55",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "BRA",
+            "flag": "https://restcountries.eu/data/bra.svg"
+          },
+          {
+            "name": "Brunei Darussalam",
+            "domain": ".bn",
+            "language": "Bruneian",
+            "capital": "Bandar Seri Begawan",
+            "nativeName": "Negara Brunei Darussalam",
+            "alpha2Code": "BN",
+            "alpha3Code": "BRN",
+            "areaCode": "+673",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "BRU",
+            "flag": "https://restcountries.eu/data/brn.svg"
+          },
+          {
+            "name": "Cabo Verde",
+            "domain": ".cv",
+            "language": "Cape Verdian",
+            "capital": "Praia",
+            "nativeName": "Cabo Verde",
+            "alpha2Code": "CV",
+            "alpha3Code": "CPV",
+            "areaCode": "+238",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "CPV",
+            "flag": "https://restcountries.eu/data/cpv.svg"
+          },
+          {
+            "name": "Anguilla",
+            "domain": ".ai",
+            "language": "Anguillian",
+            "capital": "The Valley",
+            "nativeName": "Anguilla",
+            "alpha2Code": "AI",
+            "alpha3Code": "AIA",
+            "areaCode": "+1264",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/aia.svg"
+          },
+          {
+            "name": "Algeria",
+            "domain": ".dz",
+            "language": "Algerian",
+            "capital": "Algiers",
+            "nativeName": "الجزائر",
+            "alpha2Code": "DZ",
+            "alpha3Code": "DZA",
+            "areaCode": "+213",
+            "region": "Africa",
+            "subregion": "Northern Africa",
+            "cioc": "ALG",
+            "flag": "https://restcountries.eu/data/dza.svg"
+          },
+          {
+            "name": "Antarctica",
+            "domain": ".aq",
+            "language": "",
+            "capital": "",
+            "nativeName": "Antarctica",
+            "alpha2Code": "AQ",
+            "alpha3Code": "ATA",
+            "areaCode": "+672",
+            "region": "Polar",
+            "subregion": "",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/ata.svg"
+          },
+          {
+            "name": "Belize",
+            "domain": ".bz",
+            "language": "Belizean",
+            "capital": "Belmopan",
+            "nativeName": "Belize",
+            "alpha2Code": "BZ",
+            "alpha3Code": "BLZ",
+            "areaCode": "+501",
+            "region": "Americas",
+            "subregion": "Central America",
+            "cioc": "BIZ",
+            "flag": "https://restcountries.eu/data/blz.svg"
+          },
+          {
+            "name": "Burundi",
+            "domain": ".bi",
+            "language": "Burundian",
+            "capital": "Bujumbura",
+            "nativeName": "Burundi",
+            "alpha2Code": "BI",
+            "alpha3Code": "BDI",
+            "areaCode": "+257",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "BDI",
+            "flag": "https://restcountries.eu/data/bdi.svg"
+          },
+          {
+            "name": "Argentina",
+            "domain": ".ar",
+            "language": "Argentinean",
+            "capital": "Buenos Aires",
+            "nativeName": "Argentina",
+            "alpha2Code": "AR",
+            "alpha3Code": "ARG",
+            "areaCode": "+54",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "ARG",
+            "flag": "https://restcountries.eu/data/arg.svg"
+          },
+          {
+            "name": "Barbados",
+            "domain": ".bb",
+            "language": "Barbadian",
+            "capital": "Bridgetown",
+            "nativeName": "Barbados",
+            "alpha2Code": "BB",
+            "alpha3Code": "BRB",
+            "areaCode": "+1246",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "BAR",
+            "flag": "https://restcountries.eu/data/brb.svg"
+          },
+          {
+            "name": "Bolivia (Plurinational State of)",
+            "domain": ".bo",
+            "language": "Bolivian",
+            "capital": "Sucre",
+            "nativeName": "Bolivia",
+            "alpha2Code": "BO",
+            "alpha3Code": "BOL",
+            "areaCode": "+591",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "BOL",
+            "flag": "https://restcountries.eu/data/bol.svg"
+          },
+          {
+            "name": "Cambodia",
+            "domain": ".kh",
+            "language": "Cambodian",
+            "capital": "Phnom Penh",
+            "nativeName": "Kâmpŭchéa",
+            "alpha2Code": "KH",
+            "alpha3Code": "KHM",
+            "areaCode": "+855",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "CAM",
+            "flag": "https://restcountries.eu/data/khm.svg"
+          },
+          {
+            "name": "Cameroon",
+            "domain": ".cm",
+            "language": "Cameroonian",
+            "capital": "Yaoundé",
+            "nativeName": "Cameroon",
+            "alpha2Code": "CM",
+            "alpha3Code": "CMR",
+            "areaCode": "+237",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "CMR",
+            "flag": "https://restcountries.eu/data/cmr.svg"
+          },
+          {
+            "name": "Cook Islands",
+            "domain": ".ck",
+            "language": "Cook Islander",
+            "capital": "Avarua",
+            "nativeName": "Cook Islands",
+            "alpha2Code": "CK",
+            "alpha3Code": "COK",
+            "areaCode": "+682",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "COK",
+            "flag": "https://restcountries.eu/data/cok.svg"
+          },
+          {
+            "name": "Chad",
+            "domain": ".td",
+            "language": "Chadian",
+            "capital": "N'Djamena",
+            "nativeName": "Tchad",
+            "alpha2Code": "TD",
+            "alpha3Code": "TCD",
+            "areaCode": "+235",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "CHA",
+            "flag": "https://restcountries.eu/data/tcd.svg"
+          },
+          {
+            "name": "Congo",
+            "domain": ".cg",
+            "language": "Congolese",
+            "capital": "Brazzaville",
+            "nativeName": "République du Congo",
+            "alpha2Code": "CG",
+            "alpha3Code": "COG",
+            "areaCode": "+242",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "CGO",
+            "flag": "https://restcountries.eu/data/cog.svg"
+          },
+          {
+            "name": "Benin",
+            "domain": ".bj",
+            "language": "Beninese",
+            "capital": "Porto-Novo",
+            "nativeName": "Bénin",
+            "alpha2Code": "BJ",
+            "alpha3Code": "BEN",
+            "areaCode": "+229",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "BEN",
+            "flag": "https://restcountries.eu/data/ben.svg"
+          },
+          {
+            "name": "Afghanistan",
+            "domain": ".af",
+            "language": "Afghan",
+            "capital": "Kabul",
+            "nativeName": "افغانستان",
+            "alpha2Code": "AF",
+            "alpha3Code": "AFG",
+            "areaCode": "+93",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "AFG",
+            "flag": "https://restcountries.eu/data/afg.svg"
+          },
+          {
+            "name": "Bosnia and Herzegovina",
+            "domain": ".ba",
+            "language": "Bosnian, Herzegovinian",
+            "capital": "Sarajevo",
+            "nativeName": "Bosna i Hercegovina",
+            "alpha2Code": "BA",
+            "alpha3Code": "BIH",
+            "areaCode": "+387",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "BIH",
+            "flag": "https://restcountries.eu/data/bih.svg"
+          },
+          {
+            "name": "Botswana",
+            "domain": ".bw",
+            "language": "Motswana",
+            "capital": "Gaborone",
+            "nativeName": "Botswana",
+            "alpha2Code": "BW",
+            "alpha3Code": "BWA",
+            "areaCode": "+267",
+            "region": "Africa",
+            "subregion": "Southern Africa",
+            "cioc": "BOT",
+            "flag": "https://restcountries.eu/data/bwa.svg"
+          },
+          {
+            "name": "Virgin Islands (British)",
+            "domain": ".vg",
+            "language": "Virgin Islander",
+            "capital": "Road Town",
+            "nativeName": "British Virgin Islands",
+            "alpha2Code": "VG",
+            "alpha3Code": "VGB",
+            "areaCode": "+1284",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "IVB",
+            "flag": "https://restcountries.eu/data/vgb.svg"
+          },
+          {
+            "name": "Andorra",
+            "domain": ".ad",
+            "language": "Andorran",
+            "capital": "Andorra la Vella",
+            "nativeName": "Andorra",
+            "alpha2Code": "AD",
+            "alpha3Code": "AND",
+            "areaCode": "+376",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "AND",
+            "flag": "https://restcountries.eu/data/and.svg"
+          },
+          {
+            "name": "Bahrain",
+            "domain": ".bh",
+            "language": "Bahraini",
+            "capital": "Manama",
+            "nativeName": "‏البحرين",
+            "alpha2Code": "BH",
+            "alpha3Code": "BHR",
+            "areaCode": "+973",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "BRN",
+            "flag": "https://restcountries.eu/data/bhr.svg"
+          },
+          {
+            "name": "Croatia",
+            "domain": ".hr",
+            "language": "Croatian",
+            "capital": "Zagreb",
+            "nativeName": "Hrvatska",
+            "alpha2Code": "HR",
+            "alpha3Code": "HRV",
+            "areaCode": "+385",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "CRO",
+            "flag": "https://restcountries.eu/data/hrv.svg"
+          },
+          {
+            "name": "Djibouti",
+            "domain": ".dj",
+            "language": "Djibouti",
+            "capital": "Djibouti",
+            "nativeName": "Djibouti",
+            "alpha2Code": "DJ",
+            "alpha3Code": "DJI",
+            "areaCode": "+253",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "DJI",
+            "flag": "https://restcountries.eu/data/dji.svg"
+          },
+          {
+            "name": "British Indian Ocean Territory",
+            "domain": ".io",
+            "language": "Indian",
+            "capital": "Diego Garcia",
+            "nativeName": "British Indian Ocean Territory",
+            "alpha2Code": "IO",
+            "alpha3Code": "IOT",
+            "areaCode": "+246",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/iot.svg"
+          },
+          {
+            "name": "Aruba",
+            "domain": ".aw",
+            "language": "Aruban",
+            "capital": "Oranjestad",
+            "nativeName": "Aruba",
+            "alpha2Code": "AW",
+            "alpha3Code": "ABW",
+            "areaCode": "+297",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "ARU",
+            "flag": "https://restcountries.eu/data/abw.svg"
+          },
+          {
+            "name": "Denmark",
+            "domain": ".dk",
+            "language": "Danish",
+            "capital": "Copenhagen",
+            "nativeName": "Danmark",
+            "alpha2Code": "DK",
+            "alpha3Code": "DNK",
+            "areaCode": "+45",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "DEN",
+            "flag": "https://restcountries.eu/data/dnk.svg"
+          },
+          {
+            "name": "Colombia",
+            "domain": ".co",
+            "language": "Colombian",
+            "capital": "Bogotá",
+            "nativeName": "Colombia",
+            "alpha2Code": "CO",
+            "alpha3Code": "COL",
+            "areaCode": "+57",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "COL",
+            "flag": "https://restcountries.eu/data/col.svg"
+          },
+          {
+            "name": "Congo (Democratic Republic of the)",
+            "domain": ".cd",
+            "language": "Congolese",
+            "capital": "Kinshasa",
+            "nativeName": "République démocratique du Congo",
+            "alpha2Code": "CD",
+            "alpha3Code": "COD",
+            "areaCode": "+243",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "COD",
+            "flag": "https://restcountries.eu/data/cod.svg"
+          },
+          {
+            "name": "Albania",
+            "domain": ".al",
+            "language": "Albanian",
+            "capital": "Tirana",
+            "nativeName": "Shqipëria",
+            "alpha2Code": "AL",
+            "alpha3Code": "ALB",
+            "areaCode": "+355",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "ALB",
+            "flag": "https://restcountries.eu/data/alb.svg"
+          },
+          {
+            "name": "Åland Islands",
+            "domain": ".ax",
+            "language": "Ålandish",
+            "capital": "Mariehamn",
+            "nativeName": "Åland",
+            "alpha2Code": "AX",
+            "alpha3Code": "ALA",
+            "areaCode": "+358",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/ala.svg"
+          },
+          {
+            "name": "Burkina Faso",
+            "domain": ".bf",
+            "language": "Burkinabe",
+            "capital": "Ouagadougou",
+            "nativeName": "Burkina Faso",
+            "alpha2Code": "BF",
+            "alpha3Code": "BFA",
+            "areaCode": "+226",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "BUR",
+            "flag": "https://restcountries.eu/data/bfa.svg"
+          },
+          {
+            "name": "Cayman Islands",
+            "domain": ".ky",
+            "language": "Caymanian",
+            "capital": "George Town",
+            "nativeName": "Cayman Islands",
+            "alpha2Code": "KY",
+            "alpha3Code": "CYM",
+            "areaCode": "+1345",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "CAY",
+            "flag": "https://restcountries.eu/data/cym.svg"
+          },
+          {
+            "name": "Cyprus",
+            "domain": ".cy",
+            "language": "Cypriot",
+            "capital": "Nicosia",
+            "nativeName": "Κύπρος",
+            "alpha2Code": "CY",
+            "alpha3Code": "CYP",
+            "areaCode": "+357",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "CYP",
+            "flag": "https://restcountries.eu/data/cyp.svg"
+          },
+          {
+            "name": "Chile",
+            "domain": ".cl",
+            "language": "Chilean",
+            "capital": "Santiago",
+            "nativeName": "Chile",
+            "alpha2Code": "CL",
+            "alpha3Code": "CHL",
+            "areaCode": "+56",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "CHI",
+            "flag": "https://restcountries.eu/data/chl.svg"
+          },
+          {
+            "name": "Angola",
+            "domain": ".ao",
+            "language": "Angolan",
+            "capital": "Luanda",
+            "nativeName": "Angola",
+            "alpha2Code": "AO",
+            "alpha3Code": "AGO",
+            "areaCode": "+244",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "ANG",
+            "flag": "https://restcountries.eu/data/ago.svg"
+          },
+          {
+            "name": "Armenia",
+            "domain": ".am",
+            "language": "Armenian",
+            "capital": "Yerevan",
+            "nativeName": "Հայաստան",
+            "alpha2Code": "AM",
+            "alpha3Code": "ARM",
+            "areaCode": "+374",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "ARM",
+            "flag": "https://restcountries.eu/data/arm.svg"
+          },
+          {
+            "name": "Belgium",
+            "domain": ".be",
+            "language": "Belgian",
+            "capital": "Brussels",
+            "nativeName": "België",
+            "alpha2Code": "BE",
+            "alpha3Code": "BEL",
+            "areaCode": "+32",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "BEL",
+            "flag": "https://restcountries.eu/data/bel.svg"
+          },
+          {
+            "name": "Bermuda",
+            "domain": ".bm",
+            "language": "Bermudian",
+            "capital": "Hamilton",
+            "nativeName": "Bermuda",
+            "alpha2Code": "BM",
+            "alpha3Code": "BMU",
+            "areaCode": "+1441",
+            "region": "Americas",
+            "subregion": "Northern America",
+            "cioc": "BER",
+            "flag": "https://restcountries.eu/data/bmu.svg"
+          },
+          {
+            "name": "Bhutan",
+            "domain": ".bt",
+            "language": "Bhutanese",
+            "capital": "Thimphu",
+            "nativeName": "ʼbrug-yul",
+            "alpha2Code": "BT",
+            "alpha3Code": "BTN",
+            "areaCode": "+975",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "BHU",
+            "flag": "https://restcountries.eu/data/btn.svg"
+          },
+          {
+            "name": "Czech Republic",
+            "domain": ".cz",
+            "language": "Czech",
+            "capital": "Prague",
+            "nativeName": "Česká republika",
+            "alpha2Code": "CZ",
+            "alpha3Code": "CZE",
+            "areaCode": "+420",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "CZE",
+            "flag": "https://restcountries.eu/data/cze.svg"
+          },
+          {
+            "name": "Virgin Islands (U.S.)",
+            "domain": ".vi",
+            "language": "Virgin Islander",
+            "capital": "Charlotte Amalie",
+            "nativeName": "Virgin Islands of the United States",
+            "alpha2Code": "VI",
+            "alpha3Code": "VIR",
+            "areaCode": "+1340",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "ISV",
+            "flag": "https://restcountries.eu/data/vir.svg"
+          },
+          {
+            "name": "Bulgaria",
+            "domain": ".bg",
+            "language": "Bulgarian",
+            "capital": "Sofia",
+            "nativeName": "България",
+            "alpha2Code": "BG",
+            "alpha3Code": "BGR",
+            "areaCode": "+359",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "BUL",
+            "flag": "https://restcountries.eu/data/bgr.svg"
+          },
+          {
+            "name": "Central African Republic",
+            "domain": ".cf",
+            "language": "Central African",
+            "capital": "Bangui",
+            "nativeName": "Ködörösêse tî Bêafrîka",
+            "alpha2Code": "CF",
+            "alpha3Code": "CAF",
+            "areaCode": "+236",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "CAF",
+            "flag": "https://restcountries.eu/data/caf.svg"
+          },
+          {
+            "name": "Cocos (Keeling) Islands",
+            "domain": ".cc",
+            "language": "Cocos Islander",
+            "capital": "West Island",
+            "nativeName": "Cocos (Keeling) Islands",
+            "alpha2Code": "CC",
+            "alpha3Code": "CCK",
+            "areaCode": "+61",
+            "region": "Oceania",
+            "subregion": "Australia and New Zealand",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/cck.svg"
+          },
+          {
+            "name": "Costa Rica",
+            "domain": ".cr",
+            "language": "Costa Rican",
+            "capital": "San José",
+            "nativeName": "Costa Rica",
+            "alpha2Code": "CR",
+            "alpha3Code": "CRI",
+            "areaCode": "+506",
+            "region": "Americas",
+            "subregion": "Central America",
+            "cioc": "CRC",
+            "flag": "https://restcountries.eu/data/cri.svg"
+          },
+          {
+            "name": "Cuba",
+            "domain": ".cu",
+            "language": "Cuban",
+            "capital": "Havana",
+            "nativeName": "Cuba",
+            "alpha2Code": "CU",
+            "alpha3Code": "CUB",
+            "areaCode": "+53",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "CUB",
+            "flag": "https://restcountries.eu/data/cub.svg"
+          },
+          {
+            "name": "Italy",
+            "domain": ".it",
+            "language": "Italian",
+            "capital": "Rome",
+            "nativeName": "Italia",
+            "alpha2Code": "IT",
+            "alpha3Code": "ITA",
+            "areaCode": "+39",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "ITA",
+            "flag": "https://restcountries.eu/data/ita.svg"
+          },
+          {
+            "name": "French Polynesia",
+            "domain": ".pf",
+            "language": "French Polynesian",
+            "capital": "Papeetē",
+            "nativeName": "Polynésie française",
+            "alpha2Code": "PF",
+            "alpha3Code": "PYF",
+            "areaCode": "+689",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/pyf.svg"
+          },
+          {
+            "name": "Kazakhstan",
+            "domain": ".kz",
+            "language": "Kazakhstani",
+            "capital": "Astana",
+            "nativeName": "Қазақстан",
+            "alpha2Code": "KZ",
+            "alpha3Code": "KAZ",
+            "areaCode": "+76",
+            "region": "Asia",
+            "subregion": "Central Asia",
+            "cioc": "KAZ",
+            "flag": "https://restcountries.eu/data/kaz.svg"
+          },
+          {
+            "name": "Gabon",
+            "domain": ".ga",
+            "language": "Gabonese",
+            "capital": "Libreville",
+            "nativeName": "Gabon",
+            "alpha2Code": "GA",
+            "alpha3Code": "GAB",
+            "areaCode": "+241",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "GAB",
+            "flag": "https://restcountries.eu/data/gab.svg"
+          },
+          {
+            "name": "Lithuania",
+            "domain": ".lt",
+            "language": "Lithuanian",
+            "capital": "Vilnius",
+            "nativeName": "Lietuva",
+            "alpha2Code": "LT",
+            "alpha3Code": "LTU",
+            "areaCode": "+370",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "LTU",
+            "flag": "https://restcountries.eu/data/ltu.svg"
+          },
+          {
+            "name": "Germany",
+            "domain": ".de",
+            "language": "German",
+            "capital": "Berlin",
+            "nativeName": "Deutschland",
+            "alpha2Code": "DE",
+            "alpha3Code": "DEU",
+            "areaCode": "+49",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "GER",
+            "flag": "https://restcountries.eu/data/deu.svg"
+          },
+          {
+            "name": "Macedonia (the former Yugoslav Republic of)",
+            "domain": ".mk",
+            "language": "Macedonian",
+            "capital": "Skopje",
+            "nativeName": "Македонија",
+            "alpha2Code": "MK",
+            "alpha3Code": "MKD",
+            "areaCode": "+389",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "MKD",
+            "flag": "https://restcountries.eu/data/mkd.svg"
+          },
+          {
+            "name": "Guinea-Bissau",
+            "domain": ".gw",
+            "language": "Guinea-Bissauan",
+            "capital": "Bissau",
+            "nativeName": "Guiné-Bissau",
+            "alpha2Code": "GW",
+            "alpha3Code": "GNB",
+            "areaCode": "+245",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "GBS",
+            "flag": "https://restcountries.eu/data/gnb.svg"
+          },
+          {
+            "name": "Puerto Rico",
+            "domain": ".pr",
+            "language": "Puerto Rican",
+            "capital": "San Juan",
+            "nativeName": "Puerto Rico",
+            "alpha2Code": "PR",
+            "alpha3Code": "PRI",
+            "areaCode": "+1787",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "PUR",
+            "flag": "https://restcountries.eu/data/pri.svg"
+          },
+          {
+            "name": "Martinique",
+            "domain": ".mq",
+            "language": "French",
+            "capital": "Fort-de-France",
+            "nativeName": "Martinique",
+            "alpha2Code": "MQ",
+            "alpha3Code": "MTQ",
+            "areaCode": "+596",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/mtq.svg"
+          },
+          {
+            "name": "Saint Vincent and the Grenadines",
+            "domain": ".vc",
+            "language": "Saint Vincentian",
+            "capital": "Kingstown",
+            "nativeName": "Saint Vincent and the Grenadines",
+            "alpha2Code": "VC",
+            "alpha3Code": "VCT",
+            "areaCode": "+1784",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "VIN",
+            "flag": "https://restcountries.eu/data/vct.svg"
+          },
+          {
+            "name": "Mexico",
+            "domain": ".mx",
+            "language": "Mexican",
+            "capital": "Mexico City",
+            "nativeName": "México",
+            "alpha2Code": "MX",
+            "alpha3Code": "MEX",
+            "areaCode": "+52",
+            "region": "Americas",
+            "subregion": "Central America",
+            "cioc": "MEX",
+            "flag": "https://restcountries.eu/data/mex.svg"
+          },
+          {
+            "name": "Samoa",
+            "domain": ".ws",
+            "language": "Samoan",
+            "capital": "Apia",
+            "nativeName": "Samoa",
+            "alpha2Code": "WS",
+            "alpha3Code": "WSM",
+            "areaCode": "+685",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "SAM",
+            "flag": "https://restcountries.eu/data/wsm.svg"
+          },
+          {
+            "name": "Micronesia (Federated States of)",
+            "domain": ".fm",
+            "language": "Micronesian",
+            "capital": "Palikir",
+            "nativeName": "Micronesia",
+            "alpha2Code": "FM",
+            "alpha3Code": "FSM",
+            "areaCode": "+691",
+            "region": "Oceania",
+            "subregion": "Micronesia",
+            "cioc": "FSM",
+            "flag": "https://restcountries.eu/data/fsm.svg"
+          },
+          {
+            "name": "Spain",
+            "domain": ".es",
+            "language": "Spanish",
+            "capital": "Madrid",
+            "nativeName": "España",
+            "alpha2Code": "ES",
+            "alpha3Code": "ESP",
+            "areaCode": "+34",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "ESP",
+            "flag": "https://restcountries.eu/data/esp.svg"
+          },
+          {
+            "name": "New Zealand",
+            "domain": ".nz",
+            "language": "New Zealander",
+            "capital": "Wellington",
+            "nativeName": "New Zealand",
+            "alpha2Code": "NZ",
+            "alpha3Code": "NZL",
+            "areaCode": "+64",
+            "region": "Oceania",
+            "subregion": "Australia and New Zealand",
+            "cioc": "NZL",
+            "flag": "https://restcountries.eu/data/nzl.svg"
+          },
+          {
+            "name": "Svalbard and Jan Mayen",
+            "domain": ".sj",
+            "language": "Norwegian",
+            "capital": "Longyearbyen",
+            "nativeName": "Svalbard og Jan Mayen",
+            "alpha2Code": "SJ",
+            "alpha3Code": "SJM",
+            "areaCode": "+4779",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/sjm.svg"
+          },
+          {
+            "name": "Senegal",
+            "domain": ".sn",
+            "language": "Senegalese",
+            "capital": "Dakar",
+            "nativeName": "Sénégal",
+            "alpha2Code": "SN",
+            "alpha3Code": "SEN",
+            "areaCode": "+221",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "SEN",
+            "flag": "https://restcountries.eu/data/sen.svg"
+          },
+          {
+            "name": "Taiwan",
+            "domain": ".tw",
+            "language": "Taiwanese",
+            "capital": "Taipei",
+            "nativeName": "臺灣",
+            "alpha2Code": "TW",
+            "alpha3Code": "TWN",
+            "areaCode": "+886",
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "cioc": "TPE",
+            "flag": "https://restcountries.eu/data/twn.svg"
+          },
+          {
+            "name": "Timor-Leste",
+            "domain": ".tl",
+            "language": "East Timorese",
+            "capital": "Dili",
+            "nativeName": "Timor-Leste",
+            "alpha2Code": "TL",
+            "alpha3Code": "TLS",
+            "areaCode": "+670",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "TLS",
+            "flag": "https://restcountries.eu/data/tls.svg"
+          },
+          {
+            "name": "Trinidad and Tobago",
+            "domain": ".tt",
+            "language": "Trinidadian",
+            "capital": "Port of Spain",
+            "nativeName": "Trinidad and Tobago",
+            "alpha2Code": "TT",
+            "alpha3Code": "TTO",
+            "areaCode": "+1868",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "TTO",
+            "flag": "https://restcountries.eu/data/tto.svg"
+          },
+          {
+            "name": "Turks and Caicos Islands",
+            "domain": ".tc",
+            "language": "Turks and Caicos Islander",
+            "capital": "Cockburn Town",
+            "nativeName": "Turks and Caicos Islands",
+            "alpha2Code": "TC",
+            "alpha3Code": "TCA",
+            "areaCode": "+1649",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/tca.svg"
+          },
+          {
+            "name": "Guam",
+            "domain": ".gu",
+            "language": "Guamanian",
+            "capital": "Hagåtña",
+            "nativeName": "Guam",
+            "alpha2Code": "GU",
+            "alpha3Code": "GUM",
+            "areaCode": "+1671",
+            "region": "Oceania",
+            "subregion": "Micronesia",
+            "cioc": "GUM",
+            "flag": "https://restcountries.eu/data/gum.svg"
+          },
+          {
+            "name": "Netherlands",
+            "domain": ".nl",
+            "language": "Dutch",
+            "capital": "Amsterdam",
+            "nativeName": "Nederland",
+            "alpha2Code": "NL",
+            "alpha3Code": "NLD",
+            "areaCode": "+31",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "NED",
+            "flag": "https://restcountries.eu/data/nld.svg"
+          },
+          {
+            "name": "Nicaragua",
+            "domain": ".ni",
+            "language": "Nicaraguan",
+            "capital": "Managua",
+            "nativeName": "Nicaragua",
+            "alpha2Code": "NI",
+            "alpha3Code": "NIC",
+            "areaCode": "+505",
+            "region": "Americas",
+            "subregion": "Central America",
+            "cioc": "NCA",
+            "flag": "https://restcountries.eu/data/nic.svg"
+          },
+          {
+            "name": "Nigeria",
+            "domain": ".ng",
+            "language": "Nigerian",
+            "capital": "Abuja",
+            "nativeName": "Nigeria",
+            "alpha2Code": "NG",
+            "alpha3Code": "NGA",
+            "areaCode": "+234",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "NGR",
+            "flag": "https://restcountries.eu/data/nga.svg"
+          },
+          {
+            "name": "Qatar",
+            "domain": ".qa",
+            "language": "Qatari",
+            "capital": "Doha",
+            "nativeName": "قطر",
+            "alpha2Code": "QA",
+            "alpha3Code": "QAT",
+            "areaCode": "+974",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "QAT",
+            "flag": "https://restcountries.eu/data/qat.svg"
+          },
+          {
+            "name": "Tokelau",
+            "domain": ".tk",
+            "language": "Tokelauan",
+            "capital": "Fakaofo",
+            "nativeName": "Tokelau",
+            "alpha2Code": "TK",
+            "alpha3Code": "TKL",
+            "areaCode": "+690",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/tkl.svg"
+          },
+          {
+            "name": "Turkey",
+            "domain": ".tr",
+            "language": "Turkish",
+            "capital": "Ankara",
+            "nativeName": "Türkiye",
+            "alpha2Code": "TR",
+            "alpha3Code": "TUR",
+            "areaCode": "+90",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "TUR",
+            "flag": "https://restcountries.eu/data/tur.svg"
+          },
+          {
+            "name": "Uganda",
+            "domain": ".ug",
+            "language": "Ugandan",
+            "capital": "Kampala",
+            "nativeName": "Uganda",
+            "alpha2Code": "UG",
+            "alpha3Code": "UGA",
+            "areaCode": "+256",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "UGA",
+            "flag": "https://restcountries.eu/data/uga.svg"
+          },
+          {
+            "name": "Vanuatu",
+            "domain": ".vu",
+            "language": "Ni-Vanuatu",
+            "capital": "Port Vila",
+            "nativeName": "Vanuatu",
+            "alpha2Code": "VU",
+            "alpha3Code": "VUT",
+            "areaCode": "+678",
+            "region": "Oceania",
+            "subregion": "Melanesia",
+            "cioc": "VAN",
+            "flag": "https://restcountries.eu/data/vut.svg"
+          },
+          {
+            "name": "Falkland Islands (Malvinas)",
+            "domain": ".fk",
+            "language": "Falkland Islander",
+            "capital": "Stanley",
+            "nativeName": "Falkland Islands",
+            "alpha2Code": "FK",
+            "alpha3Code": "FLK",
+            "areaCode": "+500",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/flk.svg"
+          },
+          {
+            "name": "Georgia",
+            "domain": ".ge",
+            "language": "Georgian",
+            "capital": "Tbilisi",
+            "nativeName": "საქართველო",
+            "alpha2Code": "GE",
+            "alpha3Code": "GEO",
+            "areaCode": "+995",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "GEO",
+            "flag": "https://restcountries.eu/data/geo.svg"
+          },
+          {
+            "name": "Grenada",
+            "domain": ".gd",
+            "language": "Grenadian",
+            "capital": "St. George's",
+            "nativeName": "Grenada",
+            "alpha2Code": "GD",
+            "alpha3Code": "GRD",
+            "areaCode": "+1473",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "GRN",
+            "flag": "https://restcountries.eu/data/grd.svg"
+          },
+          {
+            "name": "Guyana",
+            "domain": ".gy",
+            "language": "Guyanese",
+            "capital": "Georgetown",
+            "nativeName": "Guyana",
+            "alpha2Code": "GY",
+            "alpha3Code": "GUY",
+            "areaCode": "+592",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "GUY",
+            "flag": "https://restcountries.eu/data/guy.svg"
+          },
+          {
+            "name": "Haiti",
+            "domain": ".ht",
+            "language": "Haitian",
+            "capital": "Port-au-Prince",
+            "nativeName": "Haïti",
+            "alpha2Code": "HT",
+            "alpha3Code": "HTI",
+            "areaCode": "+509",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "HAI",
+            "flag": "https://restcountries.eu/data/hti.svg"
+          },
+          {
+            "name": "Jamaica",
+            "domain": ".jm",
+            "language": "Jamaican",
+            "capital": "Kingston",
+            "nativeName": "Jamaica",
+            "alpha2Code": "JM",
+            "alpha3Code": "JAM",
+            "areaCode": "+1876",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "JAM",
+            "flag": "https://restcountries.eu/data/jam.svg"
+          },
+          {
+            "name": "Jersey",
+            "domain": ".je",
+            "language": "Channel Islander",
+            "capital": "Saint Helier",
+            "nativeName": "Jersey",
+            "alpha2Code": "JE",
+            "alpha3Code": "JEY",
+            "areaCode": "+44",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/jey.svg"
+          },
+          {
+            "name": "Lao People's Democratic Republic",
+            "domain": ".la",
+            "language": "Laotian",
+            "capital": "Vientiane",
+            "nativeName": "ສປປລາວ",
+            "alpha2Code": "LA",
+            "alpha3Code": "LAO",
+            "areaCode": "+856",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "LAO",
+            "flag": "https://restcountries.eu/data/lao.svg"
+          },
+          {
+            "name": "Libya",
+            "domain": ".ly",
+            "language": "Libyan",
+            "capital": "Tripoli",
+            "nativeName": "‏ليبيا",
+            "alpha2Code": "LY",
+            "alpha3Code": "LBY",
+            "areaCode": "+218",
+            "region": "Africa",
+            "subregion": "Northern Africa",
+            "cioc": "LBA",
+            "flag": "https://restcountries.eu/data/lby.svg"
+          },
+          {
+            "name": "Malawi",
+            "domain": ".mw",
+            "language": "Malawian",
+            "capital": "Lilongwe",
+            "nativeName": "Malawi",
+            "alpha2Code": "MW",
+            "alpha3Code": "MWI",
+            "areaCode": "+265",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "MAW",
+            "flag": "https://restcountries.eu/data/mwi.svg"
+          },
+          {
+            "name": "Northern Mariana Islands",
+            "domain": ".mp",
+            "language": "American",
+            "capital": "Saipan",
+            "nativeName": "Northern Mariana Islands",
+            "alpha2Code": "MP",
+            "alpha3Code": "MNP",
+            "areaCode": "+1670",
+            "region": "Oceania",
+            "subregion": "Micronesia",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/mnp.svg"
+          },
+          {
+            "name": "Saint Pierre and Miquelon",
+            "domain": ".pm",
+            "language": "French",
+            "capital": "Saint-Pierre",
+            "nativeName": "Saint-Pierre-et-Miquelon",
+            "alpha2Code": "PM",
+            "alpha3Code": "SPM",
+            "areaCode": "+508",
+            "region": "Americas",
+            "subregion": "Northern America",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/spm.svg"
+          },
+          {
+            "name": "Thailand",
+            "domain": ".th",
+            "language": "Thai",
+            "capital": "Bangkok",
+            "nativeName": "ประเทศไทย",
+            "alpha2Code": "TH",
+            "alpha3Code": "THA",
+            "areaCode": "+66",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "THA",
+            "flag": "https://restcountries.eu/data/tha.svg"
+          },
+          {
+            "name": "United Kingdom of Great Britain and Northern Ireland",
+            "domain": ".uk",
+            "language": "British",
+            "capital": "London",
+            "nativeName": "United Kingdom",
+            "alpha2Code": "GB",
+            "alpha3Code": "GBR",
+            "areaCode": "+44",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "GBR",
+            "flag": "https://restcountries.eu/data/gbr.svg"
+          },
+          {
+            "name": "Egypt",
+            "domain": ".eg",
+            "language": "Egyptian",
+            "capital": "Cairo",
+            "nativeName": "مصر‎",
+            "alpha2Code": "EG",
+            "alpha3Code": "EGY",
+            "areaCode": "+20",
+            "region": "Africa",
+            "subregion": "Northern Africa",
+            "cioc": "EGY",
+            "flag": "https://restcountries.eu/data/egy.svg"
+          },
+          {
+            "name": "Finland",
+            "domain": ".fi",
+            "language": "Finnish",
+            "capital": "Helsinki",
+            "nativeName": "Suomi",
+            "alpha2Code": "FI",
+            "alpha3Code": "FIN",
+            "areaCode": "+358",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "FIN",
+            "flag": "https://restcountries.eu/data/fin.svg"
+          },
+          {
+            "name": "French Guiana",
+            "domain": ".gf",
+            "language": "",
+            "capital": "Cayenne",
+            "nativeName": "Guyane française",
+            "alpha2Code": "GF",
+            "alpha3Code": "GUF",
+            "areaCode": "+594",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/guf.svg"
+          },
+          {
+            "name": "Heard Island and McDonald Islands",
+            "domain": ".hm",
+            "language": "Heard and McDonald Islander",
+            "capital": "",
+            "nativeName": "Heard Island and McDonald Islands",
+            "alpha2Code": "HM",
+            "alpha3Code": "HMD",
+            "areaCode": "+672",
+            "region": "",
+            "subregion": "",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/hmd.svg"
+          },
+          {
+            "name": "Indonesia",
+            "domain": ".id",
+            "language": "Indonesian",
+            "capital": "Jakarta",
+            "nativeName": "Indonesia",
+            "alpha2Code": "ID",
+            "alpha3Code": "IDN",
+            "areaCode": "+62",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "INA",
+            "flag": "https://restcountries.eu/data/idn.svg"
+          },
+          {
+            "name": "Jordan",
+            "domain": ".jo",
+            "language": "Jordanian",
+            "capital": "Amman",
+            "nativeName": "الأردن",
+            "alpha2Code": "JO",
+            "alpha3Code": "JOR",
+            "areaCode": "+962",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "JOR",
+            "flag": "https://restcountries.eu/data/jor.svg"
+          },
+          {
+            "name": "Malta",
+            "domain": ".mt",
+            "language": "Maltese",
+            "capital": "Valletta",
+            "nativeName": "Malta",
+            "alpha2Code": "MT",
+            "alpha3Code": "MLT",
+            "areaCode": "+356",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "MLT",
+            "flag": "https://restcountries.eu/data/mlt.svg"
+          },
+          {
+            "name": "Norway",
+            "domain": ".no",
+            "language": "Norwegian",
+            "capital": "Oslo",
+            "nativeName": "Norge",
+            "alpha2Code": "NO",
+            "alpha3Code": "NOR",
+            "areaCode": "+47",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "NOR",
+            "flag": "https://restcountries.eu/data/nor.svg"
+          },
+          {
+            "name": "Romania",
+            "domain": ".ro",
+            "language": "Romanian",
+            "capital": "Bucharest",
+            "nativeName": "România",
+            "alpha2Code": "RO",
+            "alpha3Code": "ROU",
+            "areaCode": "+40",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "ROU",
+            "flag": "https://restcountries.eu/data/rou.svg"
+          },
+          {
+            "name": "Rwanda",
+            "domain": ".rw",
+            "language": "Rwandan",
+            "capital": "Kigali",
+            "nativeName": "Rwanda",
+            "alpha2Code": "RW",
+            "alpha3Code": "RWA",
+            "areaCode": "+250",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "RWA",
+            "flag": "https://restcountries.eu/data/rwa.svg"
+          },
+          {
+            "name": "Saint Helena, Ascension and Tristan da Cunha",
+            "domain": ".sh",
+            "language": "Saint Helenian",
+            "capital": "Jamestown",
+            "nativeName": "Saint Helena",
+            "alpha2Code": "SH",
+            "alpha3Code": "SHN",
+            "areaCode": "+290",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": null,
+            "flag": "https://restcountries.eu/data/shn.svg"
+          },
+          {
+            "name": "Slovenia",
+            "domain": ".si",
+            "language": "Slovene",
+            "capital": "Ljubljana",
+            "nativeName": "Slovenija",
+            "alpha2Code": "SI",
+            "alpha3Code": "SVN",
+            "areaCode": "+386",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "SLO",
+            "flag": "https://restcountries.eu/data/svn.svg"
+          },
+          {
+            "name": "Suriname",
+            "domain": ".sr",
+            "language": "Surinamer",
+            "capital": "Paramaribo",
+            "nativeName": "Suriname",
+            "alpha2Code": "SR",
+            "alpha3Code": "SUR",
+            "areaCode": "+597",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "SUR",
+            "flag": "https://restcountries.eu/data/sur.svg"
+          },
+          {
+            "name": "Tunisia",
+            "domain": ".tn",
+            "language": "Tunisian",
+            "capital": "Tunis",
+            "nativeName": "تونس",
+            "alpha2Code": "TN",
+            "alpha3Code": "TUN",
+            "areaCode": "+216",
+            "region": "Africa",
+            "subregion": "Northern Africa",
+            "cioc": "TUN",
+            "flag": "https://restcountries.eu/data/tun.svg"
+          },
+          {
+            "name": "Ukraine",
+            "domain": ".ua",
+            "language": "Ukrainian",
+            "capital": "Kiev",
+            "nativeName": "Україна",
+            "alpha2Code": "UA",
+            "alpha3Code": "UKR",
+            "areaCode": "+380",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "UKR",
+            "flag": "https://restcountries.eu/data/ukr.svg"
+          },
+          {
+            "name": "United Arab Emirates",
+            "domain": ".ae",
+            "language": "Emirati",
+            "capital": "Abu Dhabi",
+            "nativeName": "دولة الإمارات العربية المتحدة",
+            "alpha2Code": "AE",
+            "alpha3Code": "ARE",
+            "areaCode": "+971",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "UAE",
+            "flag": "https://restcountries.eu/data/are.svg"
+          },
+          {
+            "name": "Dominican Republic",
+            "domain": ".do",
+            "language": "Dominican",
+            "capital": "Santo Domingo",
+            "nativeName": "República Dominicana",
+            "alpha2Code": "DO",
+            "alpha3Code": "DOM",
+            "areaCode": "+1809",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "DOM",
+            "flag": "https://restcountries.eu/data/dom.svg"
+          },
+          {
+            "name": "Greenland",
+            "domain": ".gl",
+            "language": "Greenlandic",
+            "capital": "Nuuk",
+            "nativeName": "Kalaallit Nunaat",
+            "alpha2Code": "GL",
+            "alpha3Code": "GRL",
+            "areaCode": "+299",
+            "region": "Americas",
+            "subregion": "Northern America",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/grl.svg"
+          },
+          {
+            "name": "Guinea",
+            "domain": ".gn",
+            "language": "Guinean",
+            "capital": "Conakry",
+            "nativeName": "Guinée",
+            "alpha2Code": "GN",
+            "alpha3Code": "GIN",
+            "areaCode": "+224",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "GUI",
+            "flag": "https://restcountries.eu/data/gin.svg"
+          },
+          {
+            "name": "Côte d'Ivoire",
+            "domain": ".ci",
+            "language": "Ivorian",
+            "capital": "Yamoussoukro",
+            "nativeName": "Côte d'Ivoire",
+            "alpha2Code": "CI",
+            "alpha3Code": "CIV",
+            "areaCode": "+225",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "CIV",
+            "flag": "https://restcountries.eu/data/civ.svg"
+          },
+          {
+            "name": "Iraq",
+            "domain": ".iq",
+            "language": "Iraqi",
+            "capital": "Baghdad",
+            "nativeName": "العراق",
+            "alpha2Code": "IQ",
+            "alpha3Code": "IRQ",
+            "areaCode": "+964",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "IRQ",
+            "flag": "https://restcountries.eu/data/irq.svg"
+          },
+          {
+            "name": "Kuwait",
+            "domain": ".kw",
+            "language": "Kuwaiti",
+            "capital": "Kuwait City",
+            "nativeName": "الكويت",
+            "alpha2Code": "KW",
+            "alpha3Code": "KWT",
+            "areaCode": "+965",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "KUW",
+            "flag": "https://restcountries.eu/data/kwt.svg"
+          },
+          {
+            "name": "Latvia",
+            "domain": ".lv",
+            "language": "Latvian",
+            "capital": "Riga",
+            "nativeName": "Latvija",
+            "alpha2Code": "LV",
+            "alpha3Code": "LVA",
+            "areaCode": "+371",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "LAT",
+            "flag": "https://restcountries.eu/data/lva.svg"
+          },
+          {
+            "name": "Niue",
+            "domain": ".nu",
+            "language": "Niuean",
+            "capital": "Alofi",
+            "nativeName": "Niuē",
+            "alpha2Code": "NU",
+            "alpha3Code": "NIU",
+            "areaCode": "+683",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/niu.svg"
+          },
+          {
+            "name": "Palestine, State of",
+            "domain": ".ps",
+            "language": "Palestinian",
+            "capital": "Ramallah",
+            "nativeName": "فلسطين",
+            "alpha2Code": "PS",
+            "alpha3Code": "PSE",
+            "areaCode": "+970",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "PLE",
+            "flag": "https://restcountries.eu/data/pse.svg"
+          },
+          {
+            "name": "Pitcairn",
+            "domain": ".pn",
+            "language": "Pitcairn Islander",
+            "capital": "Adamstown",
+            "nativeName": "Pitcairn Islands",
+            "alpha2Code": "PN",
+            "alpha3Code": "PCN",
+            "areaCode": "+64",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/pcn.svg"
+          },
+          {
+            "name": "Saint Kitts and Nevis",
+            "domain": ".kn",
+            "language": "Kittian and Nevisian",
+            "capital": "Basseterre",
+            "nativeName": "Saint Kitts and Nevis",
+            "alpha2Code": "KN",
+            "alpha3Code": "KNA",
+            "areaCode": "+1869",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "SKN",
+            "flag": "https://restcountries.eu/data/kna.svg"
+          },
+          {
+            "name": "Singapore",
+            "domain": ".sg",
+            "language": "Singaporean",
+            "capital": "Singapore",
+            "nativeName": "Singapore",
+            "alpha2Code": "SG",
+            "alpha3Code": "SGP",
+            "areaCode": "+65",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "SIN",
+            "flag": "https://restcountries.eu/data/sgp.svg"
+          },
+          {
+            "name": "Tajikistan",
+            "domain": ".tj",
+            "language": "Tadzhik",
+            "capital": "Dushanbe",
+            "nativeName": "Тоҷикистон",
+            "alpha2Code": "TJ",
+            "alpha3Code": "TJK",
+            "areaCode": "+992",
+            "region": "Asia",
+            "subregion": "Central Asia",
+            "cioc": "TJK",
+            "flag": "https://restcountries.eu/data/tjk.svg"
+          },
+          {
+            "name": "Ecuador",
+            "domain": ".ec",
+            "language": "Ecuadorean",
+            "capital": "Quito",
+            "nativeName": "Ecuador",
+            "alpha2Code": "EC",
+            "alpha3Code": "ECU",
+            "areaCode": "+593",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "ECU",
+            "flag": "https://restcountries.eu/data/ecu.svg"
+          },
+          {
+            "name": "Ethiopia",
+            "domain": ".et",
+            "language": "Ethiopian",
+            "capital": "Addis Ababa",
+            "nativeName": "ኢትዮጵያ",
+            "alpha2Code": "ET",
+            "alpha3Code": "ETH",
+            "areaCode": "+251",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "ETH",
+            "flag": "https://restcountries.eu/data/eth.svg"
+          },
+          {
+            "name": "Fiji",
+            "domain": ".fj",
+            "language": "Fijian",
+            "capital": "Suva",
+            "nativeName": "Fiji",
+            "alpha2Code": "FJ",
+            "alpha3Code": "FJI",
+            "areaCode": "+679",
+            "region": "Oceania",
+            "subregion": "Melanesia",
+            "cioc": "FIJ",
+            "flag": "https://restcountries.eu/data/fji.svg"
+          },
+          {
+            "name": "Israel",
+            "domain": ".il",
+            "language": "Israeli",
+            "capital": "Jerusalem",
+            "nativeName": "יִשְׂרָאֵל",
+            "alpha2Code": "IL",
+            "alpha3Code": "ISR",
+            "areaCode": "+972",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "ISR",
+            "flag": "https://restcountries.eu/data/isr.svg"
+          },
+          {
+            "name": "Mayotte",
+            "domain": ".yt",
+            "language": "French",
+            "capital": "Mamoudzou",
+            "nativeName": "Mayotte",
+            "alpha2Code": "YT",
+            "alpha3Code": "MYT",
+            "areaCode": "+262",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/myt.svg"
+          },
+          {
+            "name": "Niger",
+            "domain": ".ne",
+            "language": "Nigerien",
+            "capital": "Niamey",
+            "nativeName": "Niger",
+            "alpha2Code": "NE",
+            "alpha3Code": "NER",
+            "areaCode": "+227",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "NIG",
+            "flag": "https://restcountries.eu/data/ner.svg"
+          },
+          {
+            "name": "Pakistan",
+            "domain": ".pk",
+            "language": "Pakistani",
+            "capital": "Islamabad",
+            "nativeName": "Pakistan",
+            "alpha2Code": "PK",
+            "alpha3Code": "PAK",
+            "areaCode": "+92",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "PAK",
+            "flag": "https://restcountries.eu/data/pak.svg"
+          },
+          {
+            "name": "Portugal",
+            "domain": ".pt",
+            "language": "Portuguese",
+            "capital": "Lisbon",
+            "nativeName": "Portugal",
+            "alpha2Code": "PT",
+            "alpha3Code": "PRT",
+            "areaCode": "+351",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "POR",
+            "flag": "https://restcountries.eu/data/prt.svg"
+          },
+          {
+            "name": "Sierra Leone",
+            "domain": ".sl",
+            "language": "Sierra Leonean",
+            "capital": "Freetown",
+            "nativeName": "Sierra Leone",
+            "alpha2Code": "SL",
+            "alpha3Code": "SLE",
+            "areaCode": "+232",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "SLE",
+            "flag": "https://restcountries.eu/data/sle.svg"
+          },
+          {
+            "name": "Solomon Islands",
+            "domain": ".sb",
+            "language": "Solomon Islander",
+            "capital": "Honiara",
+            "nativeName": "Solomon Islands",
+            "alpha2Code": "SB",
+            "alpha3Code": "SLB",
+            "areaCode": "+677",
+            "region": "Oceania",
+            "subregion": "Melanesia",
+            "cioc": "SOL",
+            "flag": "https://restcountries.eu/data/slb.svg"
+          },
+          {
+            "name": "South Africa",
+            "domain": ".za",
+            "language": "South African",
+            "capital": "Pretoria",
+            "nativeName": "South Africa",
+            "alpha2Code": "ZA",
+            "alpha3Code": "ZAF",
+            "areaCode": "+27",
+            "region": "Africa",
+            "subregion": "Southern Africa",
+            "cioc": "RSA",
+            "flag": "https://restcountries.eu/data/zaf.svg"
+          },
+          {
+            "name": "Syrian Arab Republic",
+            "domain": ".sy",
+            "language": "Syrian",
+            "capital": "Damascus",
+            "nativeName": "سوريا",
+            "alpha2Code": "SY",
+            "alpha3Code": "SYR",
+            "areaCode": "+963",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "SYR",
+            "flag": "https://restcountries.eu/data/syr.svg"
+          },
+          {
+            "name": "Uruguay",
+            "domain": ".uy",
+            "language": "Uruguayan",
+            "capital": "Montevideo",
+            "nativeName": "Uruguay",
+            "alpha2Code": "UY",
+            "alpha3Code": "URY",
+            "areaCode": "+598",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "URU",
+            "flag": "https://restcountries.eu/data/ury.svg"
+          },
+          {
+            "name": "El Salvador",
+            "domain": ".sv",
+            "language": "Salvadoran",
+            "capital": "San Salvador",
+            "nativeName": "El Salvador",
+            "alpha2Code": "SV",
+            "alpha3Code": "SLV",
+            "areaCode": "+503",
+            "region": "Americas",
+            "subregion": "Central America",
+            "cioc": "ESA",
+            "flag": "https://restcountries.eu/data/slv.svg"
+          },
+          {
+            "name": "France",
+            "domain": ".fr",
+            "language": "French",
+            "capital": "Paris",
+            "nativeName": "France",
+            "alpha2Code": "FR",
+            "alpha3Code": "FRA",
+            "areaCode": "+33",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "FRA",
+            "flag": "https://restcountries.eu/data/fra.svg"
+          },
+          {
+            "name": "Hungary",
+            "domain": ".hu",
+            "language": "Hungarian",
+            "capital": "Budapest",
+            "nativeName": "Magyarország",
+            "alpha2Code": "HU",
+            "alpha3Code": "HUN",
+            "areaCode": "+36",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "HUN",
+            "flag": "https://restcountries.eu/data/hun.svg"
+          },
+          {
+            "name": "Kenya",
+            "domain": ".ke",
+            "language": "Kenyan",
+            "capital": "Nairobi",
+            "nativeName": "Kenya",
+            "alpha2Code": "KE",
+            "alpha3Code": "KEN",
+            "areaCode": "+254",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "KEN",
+            "flag": "https://restcountries.eu/data/ken.svg"
+          },
+          {
+            "name": "Lesotho",
+            "domain": ".ls",
+            "language": "Mosotho",
+            "capital": "Maseru",
+            "nativeName": "Lesotho",
+            "alpha2Code": "LS",
+            "alpha3Code": "LSO",
+            "areaCode": "+266",
+            "region": "Africa",
+            "subregion": "Southern Africa",
+            "cioc": "LES",
+            "flag": "https://restcountries.eu/data/lso.svg"
+          },
+          {
+            "name": "Liechtenstein",
+            "domain": ".li",
+            "language": "Liechtensteiner",
+            "capital": "Vaduz",
+            "nativeName": "Liechtenstein",
+            "alpha2Code": "LI",
+            "alpha3Code": "LIE",
+            "areaCode": "+423",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "LIE",
+            "flag": "https://restcountries.eu/data/lie.svg"
+          },
+          {
+            "name": "Myanmar",
+            "domain": ".mm",
+            "language": "Burmese",
+            "capital": "Naypyidaw",
+            "nativeName": "Myanma",
+            "alpha2Code": "MM",
+            "alpha3Code": "MMR",
+            "areaCode": "+95",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "MYA",
+            "flag": "https://restcountries.eu/data/mmr.svg"
+          },
+          {
+            "name": "Réunion",
+            "domain": ".re",
+            "language": "French",
+            "capital": "Saint-Denis",
+            "nativeName": "La Réunion",
+            "alpha2Code": "RE",
+            "alpha3Code": "REU",
+            "areaCode": "+262",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/reu.svg"
+          },
+          {
+            "name": "South Sudan",
+            "domain": ".ss",
+            "language": "South Sudanese",
+            "capital": "Juba",
+            "nativeName": "South Sudan",
+            "alpha2Code": "SS",
+            "alpha3Code": "SSD",
+            "areaCode": "+211",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/ssd.svg"
+          },
+          {
+            "name": "Switzerland",
+            "domain": ".ch",
+            "language": "Swiss",
+            "capital": "Bern",
+            "nativeName": "Schweiz",
+            "alpha2Code": "CH",
+            "alpha3Code": "CHE",
+            "areaCode": "+41",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "SUI",
+            "flag": "https://restcountries.eu/data/che.svg"
+          },
+          {
+            "name": "Western Sahara",
+            "domain": ".eh",
+            "language": "Sahrawi",
+            "capital": "El Aaiún",
+            "nativeName": "الصحراء الغربية",
+            "alpha2Code": "EH",
+            "alpha3Code": "ESH",
+            "areaCode": "+212",
+            "region": "Africa",
+            "subregion": "Northern Africa",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/esh.svg"
+          },
+          {
+            "name": "Zambia",
+            "domain": ".zm",
+            "language": "Zambian",
+            "capital": "Lusaka",
+            "nativeName": "Zambia",
+            "alpha2Code": "ZM",
+            "alpha3Code": "ZMB",
+            "areaCode": "+260",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "ZAM",
+            "flag": "https://restcountries.eu/data/zmb.svg"
+          },
+          {
+            "name": "Faroe Islands",
+            "domain": ".fo",
+            "language": "Faroese",
+            "capital": "Tórshavn",
+            "nativeName": "Føroyar",
+            "alpha2Code": "FO",
+            "alpha3Code": "FRO",
+            "areaCode": "+298",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/fro.svg"
+          },
+          {
+            "name": "Equatorial Guinea",
+            "domain": ".gq",
+            "language": "Equatorial Guinean",
+            "capital": "Malabo",
+            "nativeName": "Guinea Ecuatorial",
+            "alpha2Code": "GQ",
+            "alpha3Code": "GNQ",
+            "areaCode": "+240",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "GEQ",
+            "flag": "https://restcountries.eu/data/gnq.svg"
+          },
+          {
+            "name": "Guatemala",
+            "domain": ".gt",
+            "language": "Guatemalan",
+            "capital": "Guatemala City",
+            "nativeName": "Guatemala",
+            "alpha2Code": "GT",
+            "alpha3Code": "GTM",
+            "areaCode": "+502",
+            "region": "Americas",
+            "subregion": "Central America",
+            "cioc": "GUA",
+            "flag": "https://restcountries.eu/data/gtm.svg"
+          },
+          {
+            "name": "India",
+            "domain": ".in",
+            "language": "Indian",
+            "capital": "New Delhi",
+            "nativeName": "भारत",
+            "alpha2Code": "IN",
+            "alpha3Code": "IND",
+            "areaCode": "+91",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "IND",
+            "flag": "https://restcountries.eu/data/ind.svg"
+          },
+          {
+            "name": "Ireland",
+            "domain": ".ie",
+            "language": "Irish",
+            "capital": "Dublin",
+            "nativeName": "Éire",
+            "alpha2Code": "IE",
+            "alpha3Code": "IRL",
+            "areaCode": "+353",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "IRL",
+            "flag": "https://restcountries.eu/data/irl.svg"
+          },
+          {
+            "name": "Japan",
+            "domain": ".jp",
+            "language": "Japanese",
+            "capital": "Tokyo",
+            "nativeName": "日本",
+            "alpha2Code": "JP",
+            "alpha3Code": "JPN",
+            "areaCode": "+81",
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "cioc": "JPN",
+            "flag": "https://restcountries.eu/data/jpn.svg"
+          },
+          {
+            "name": "Liberia",
+            "domain": ".lr",
+            "language": "Liberian",
+            "capital": "Monrovia",
+            "nativeName": "Liberia",
+            "alpha2Code": "LR",
+            "alpha3Code": "LBR",
+            "areaCode": "+231",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "LBR",
+            "flag": "https://restcountries.eu/data/lbr.svg"
+          },
+          {
+            "name": "Luxembourg",
+            "domain": ".lu",
+            "language": "Luxembourger",
+            "capital": "Luxembourg",
+            "nativeName": "Luxembourg",
+            "alpha2Code": "LU",
+            "alpha3Code": "LUX",
+            "areaCode": "+352",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "LUX",
+            "flag": "https://restcountries.eu/data/lux.svg"
+          },
+          {
+            "name": "Marshall Islands",
+            "domain": ".mh",
+            "language": "Marshallese",
+            "capital": "Majuro",
+            "nativeName": "M̧ajeļ",
+            "alpha2Code": "MH",
+            "alpha3Code": "MHL",
+            "areaCode": "+692",
+            "region": "Oceania",
+            "subregion": "Micronesia",
+            "cioc": "MHL",
+            "flag": "https://restcountries.eu/data/mhl.svg"
+          },
+          {
+            "name": "Moldova (Republic of)",
+            "domain": ".md",
+            "language": "Moldovan",
+            "capital": "Chișinău",
+            "nativeName": "Moldova",
+            "alpha2Code": "MD",
+            "alpha3Code": "MDA",
+            "areaCode": "+373",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "MDA",
+            "flag": "https://restcountries.eu/data/mda.svg"
+          },
+          {
+            "name": "Papua New Guinea",
+            "domain": ".pg",
+            "language": "Papua New Guinean",
+            "capital": "Port Moresby",
+            "nativeName": "Papua Niugini",
+            "alpha2Code": "PG",
+            "alpha3Code": "PNG",
+            "areaCode": "+675",
+            "region": "Oceania",
+            "subregion": "Melanesia",
+            "cioc": "PNG",
+            "flag": "https://restcountries.eu/data/png.svg"
+          },
+          {
+            "name": "Turkmenistan",
+            "domain": ".tm",
+            "language": "Turkmen",
+            "capital": "Ashgabat",
+            "nativeName": "Türkmenistan",
+            "alpha2Code": "TM",
+            "alpha3Code": "TKM",
+            "areaCode": "+993",
+            "region": "Asia",
+            "subregion": "Central Asia",
+            "cioc": "TKM",
+            "flag": "https://restcountries.eu/data/tkm.svg"
+          },
+          {
+            "name": "Wallis and Futuna",
+            "domain": ".wf",
+            "language": "Wallis and Futuna Islander",
+            "capital": "Mata-Utu",
+            "nativeName": "Wallis et Futuna",
+            "alpha2Code": "WF",
+            "alpha3Code": "WLF",
+            "areaCode": "+681",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/wlf.svg"
+          },
+          {
+            "name": "Iceland",
+            "domain": ".is",
+            "language": "Icelander",
+            "capital": "Reykjavík",
+            "nativeName": "Ísland",
+            "alpha2Code": "IS",
+            "alpha3Code": "ISL",
+            "areaCode": "+354",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "ISL",
+            "flag": "https://restcountries.eu/data/isl.svg"
+          },
+          {
+            "name": "Lebanon",
+            "domain": ".lb",
+            "language": "Lebanese",
+            "capital": "Beirut",
+            "nativeName": "لبنان",
+            "alpha2Code": "LB",
+            "alpha3Code": "LBN",
+            "areaCode": "+961",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "LIB",
+            "flag": "https://restcountries.eu/data/lbn.svg"
+          },
+          {
+            "name": "Morocco",
+            "domain": ".ma",
+            "language": "Moroccan",
+            "capital": "Rabat",
+            "nativeName": "المغرب",
+            "alpha2Code": "MA",
+            "alpha3Code": "MAR",
+            "areaCode": "+212",
+            "region": "Africa",
+            "subregion": "Northern Africa",
+            "cioc": "MAR",
+            "flag": "https://restcountries.eu/data/mar.svg"
+          },
+          {
+            "name": "Norfolk Island",
+            "domain": ".nf",
+            "language": "Norfolk Islander",
+            "capital": "Kingston",
+            "nativeName": "Norfolk Island",
+            "alpha2Code": "NF",
+            "alpha3Code": "NFK",
+            "areaCode": "+672",
+            "region": "Oceania",
+            "subregion": "Australia and New Zealand",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/nfk.svg"
+          },
+          {
+            "name": "Oman",
+            "domain": ".om",
+            "language": "Omani",
+            "capital": "Muscat",
+            "nativeName": "عمان",
+            "alpha2Code": "OM",
+            "alpha3Code": "OMN",
+            "areaCode": "+968",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "OMA",
+            "flag": "https://restcountries.eu/data/omn.svg"
+          },
+          {
+            "name": "Palau",
+            "domain": ".pw",
+            "language": "Palauan",
+            "capital": "Ngerulmud",
+            "nativeName": "Palau",
+            "alpha2Code": "PW",
+            "alpha3Code": "PLW",
+            "areaCode": "+680",
+            "region": "Oceania",
+            "subregion": "Micronesia",
+            "cioc": "PLW",
+            "flag": "https://restcountries.eu/data/plw.svg"
+          },
+          {
+            "name": "Panama",
+            "domain": ".pa",
+            "language": "Panamanian",
+            "capital": "Panama City",
+            "nativeName": "Panamá",
+            "alpha2Code": "PA",
+            "alpha3Code": "PAN",
+            "areaCode": "+507",
+            "region": "Americas",
+            "subregion": "Central America",
+            "cioc": "PAN",
+            "flag": "https://restcountries.eu/data/pan.svg"
+          },
+          {
+            "name": "Poland",
+            "domain": ".pl",
+            "language": "Polish",
+            "capital": "Warsaw",
+            "nativeName": "Polska",
+            "alpha2Code": "PL",
+            "alpha3Code": "POL",
+            "areaCode": "+48",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "POL",
+            "flag": "https://restcountries.eu/data/pol.svg"
+          },
+          {
+            "name": "Saint Barthélemy",
+            "domain": ".bl",
+            "language": "Saint Barthélemy Islander",
+            "capital": "Gustavia",
+            "nativeName": "Saint-Barthélemy",
+            "alpha2Code": "BL",
+            "alpha3Code": "BLM",
+            "areaCode": "+590",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/blm.svg"
+          },
+          {
+            "name": "Serbia",
+            "domain": ".rs",
+            "language": "Serbian",
+            "capital": "Belgrade",
+            "nativeName": "Србија",
+            "alpha2Code": "RS",
+            "alpha3Code": "SRB",
+            "areaCode": "+381",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "SRB",
+            "flag": "https://restcountries.eu/data/srb.svg"
+          },
+          {
+            "name": "Togo",
+            "domain": ".tg",
+            "language": "Togolese",
+            "capital": "Lomé",
+            "nativeName": "Togo",
+            "alpha2Code": "TG",
+            "alpha3Code": "TGO",
+            "areaCode": "+228",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "TOG",
+            "flag": "https://restcountries.eu/data/tgo.svg"
+          },
+          {
+            "name": "French Southern Territories",
+            "domain": ".tf",
+            "language": "French",
+            "capital": "Port-aux-Français",
+            "nativeName": "Territoire des Terres australes et antarctiques françaises",
+            "alpha2Code": "TF",
+            "alpha3Code": "ATF",
+            "areaCode": "+262",
+            "region": "Africa",
+            "subregion": "Southern Africa",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/atf.svg"
+          },
+          {
+            "name": "Eritrea",
+            "domain": ".er",
+            "language": "Eritrean",
+            "capital": "Asmara",
+            "nativeName": "ኤርትራ",
+            "alpha2Code": "ER",
+            "alpha3Code": "ERI",
+            "areaCode": "+291",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "ERI",
+            "flag": "https://restcountries.eu/data/eri.svg"
+          },
+          {
+            "name": "Kyrgyzstan",
+            "domain": ".kg",
+            "language": "Kirghiz",
+            "capital": "Bishkek",
+            "nativeName": "Кыргызстан",
+            "alpha2Code": "KG",
+            "alpha3Code": "KGZ",
+            "areaCode": "+996",
+            "region": "Asia",
+            "subregion": "Central Asia",
+            "cioc": "KGZ",
+            "flag": "https://restcountries.eu/data/kgz.svg"
+          },
+          {
+            "name": "Montserrat",
+            "domain": ".ms",
+            "language": "Montserratian",
+            "capital": "Plymouth",
+            "nativeName": "Montserrat",
+            "alpha2Code": "MS",
+            "alpha3Code": "MSR",
+            "areaCode": "+1664",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/msr.svg"
+          },
+          {
+            "name": "Nepal",
+            "domain": ".np",
+            "language": "Nepalese",
+            "capital": "Kathmandu",
+            "nativeName": "नेपाल",
+            "alpha2Code": "NP",
+            "alpha3Code": "NPL",
+            "areaCode": "+977",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "NEP",
+            "flag": "https://restcountries.eu/data/npl.svg"
+          },
+          {
+            "name": "Korea (Republic of)",
+            "domain": ".kr",
+            "language": "South Korean",
+            "capital": "Seoul",
+            "nativeName": "대한민국",
+            "alpha2Code": "KR",
+            "alpha3Code": "KOR",
+            "areaCode": "+82",
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "cioc": "KOR",
+            "flag": "https://restcountries.eu/data/kor.svg"
+          },
+          {
+            "name": "Tanzania, United Republic of",
+            "domain": ".tz",
+            "language": "Tanzanian",
+            "capital": "Dodoma",
+            "nativeName": "Tanzania",
+            "alpha2Code": "TZ",
+            "alpha3Code": "TZA",
+            "areaCode": "+255",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "TAN",
+            "flag": "https://restcountries.eu/data/tza.svg"
+          },
+          {
+            "name": "Tuvalu",
+            "domain": ".tv",
+            "language": "Tuvaluan",
+            "capital": "Funafuti",
+            "nativeName": "Tuvalu",
+            "alpha2Code": "TV",
+            "alpha3Code": "TUV",
+            "areaCode": "+688",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "TUV",
+            "flag": "https://restcountries.eu/data/tuv.svg"
+          },
+          {
+            "name": "Venezuela (Bolivarian Republic of)",
+            "domain": ".ve",
+            "language": "Venezuelan",
+            "capital": "Caracas",
+            "nativeName": "Venezuela",
+            "alpha2Code": "VE",
+            "alpha3Code": "VEN",
+            "areaCode": "+58",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "VEN",
+            "flag": "https://restcountries.eu/data/ven.svg"
+          },
+          {
+            "name": "Gambia",
+            "domain": ".gm",
+            "language": "Gambian",
+            "capital": "Banjul",
+            "nativeName": "Gambia",
+            "alpha2Code": "GM",
+            "alpha3Code": "GMB",
+            "areaCode": "+220",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "GAM",
+            "flag": "https://restcountries.eu/data/gmb.svg"
+          },
+          {
+            "name": "Greece",
+            "domain": ".gr",
+            "language": "Greek",
+            "capital": "Athens",
+            "nativeName": "Ελλάδα",
+            "alpha2Code": "GR",
+            "alpha3Code": "GRC",
+            "areaCode": "+30",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "GRE",
+            "flag": "https://restcountries.eu/data/grc.svg"
+          },
+          {
+            "name": "Hong Kong",
+            "domain": ".hk",
+            "language": "Chinese",
+            "capital": "City of Victoria",
+            "nativeName": "香港",
+            "alpha2Code": "HK",
+            "alpha3Code": "HKG",
+            "areaCode": "+852",
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "cioc": "HKG",
+            "flag": "https://restcountries.eu/data/hkg.svg"
+          },
+          {
+            "name": "Macao",
+            "domain": ".mo",
+            "language": "Chinese",
+            "capital": "",
+            "nativeName": "澳門",
+            "alpha2Code": "MO",
+            "alpha3Code": "MAC",
+            "areaCode": "+853",
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/mac.svg"
+          },
+          {
+            "name": "Peru",
+            "domain": ".pe",
+            "language": "Peruvian",
+            "capital": "Lima",
+            "nativeName": "Perú",
+            "alpha2Code": "PE",
+            "alpha3Code": "PER",
+            "areaCode": "+51",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "PER",
+            "flag": "https://restcountries.eu/data/per.svg"
+          },
+          {
+            "name": "Russian Federation",
+            "domain": ".ru",
+            "language": "Russian",
+            "capital": "Moscow",
+            "nativeName": "Россия",
+            "alpha2Code": "RU",
+            "alpha3Code": "RUS",
+            "areaCode": "+7",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "RUS",
+            "flag": "https://restcountries.eu/data/rus.svg"
+          },
+          {
+            "name": "Saint Martin (French part)",
+            "domain": ".mf",
+            "language": "Saint Martin Islander",
+            "capital": "Marigot",
+            "nativeName": "Saint-Martin",
+            "alpha2Code": "MF",
+            "alpha3Code": "MAF",
+            "areaCode": "+590",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/maf.svg"
+          },
+          {
+            "name": "Saudi Arabia",
+            "domain": ".sa",
+            "language": "Saudi Arabian",
+            "capital": "Riyadh",
+            "nativeName": "العربية السعودية",
+            "alpha2Code": "SA",
+            "alpha3Code": "SAU",
+            "areaCode": "+966",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "KSA",
+            "flag": "https://restcountries.eu/data/sau.svg"
+          },
+          {
+            "name": "Swaziland",
+            "domain": ".sz",
+            "language": "Swazi",
+            "capital": "Lobamba",
+            "nativeName": "Swaziland",
+            "alpha2Code": "SZ",
+            "alpha3Code": "SWZ",
+            "areaCode": "+268",
+            "region": "Africa",
+            "subregion": "Southern Africa",
+            "cioc": "SWZ",
+            "flag": "https://restcountries.eu/data/swz.svg"
+          },
+          {
+            "name": "Sweden",
+            "domain": ".se",
+            "language": "Swedish",
+            "capital": "Stockholm",
+            "nativeName": "Sverige",
+            "alpha2Code": "SE",
+            "alpha3Code": "SWE",
+            "areaCode": "+46",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "SWE",
+            "flag": "https://restcountries.eu/data/swe.svg"
+          },
+          {
+            "name": "Viet Nam",
+            "domain": ".vn",
+            "language": "Vietnamese",
+            "capital": "Hanoi",
+            "nativeName": "Việt Nam",
+            "alpha2Code": "VN",
+            "alpha3Code": "VNM",
+            "areaCode": "+84",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "VIE",
+            "flag": "https://restcountries.eu/data/vnm.svg"
+          },
+          {
+            "name": "Iran (Islamic Republic of)",
+            "domain": ".ir",
+            "language": "Iranian",
+            "capital": "Tehran",
+            "nativeName": "ایران",
+            "alpha2Code": "IR",
+            "alpha3Code": "IRN",
+            "areaCode": "+98",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "IRI",
+            "flag": "https://restcountries.eu/data/irn.svg"
+          },
+          {
+            "name": "Kiribati",
+            "domain": ".ki",
+            "language": "I-Kiribati",
+            "capital": "South Tarawa",
+            "nativeName": "Kiribati",
+            "alpha2Code": "KI",
+            "alpha3Code": "KIR",
+            "areaCode": "+686",
+            "region": "Oceania",
+            "subregion": "Micronesia",
+            "cioc": "KIR",
+            "flag": "https://restcountries.eu/data/kir.svg"
+          },
+          {
+            "name": "Mauritius",
+            "domain": ".mu",
+            "language": "Mauritian",
+            "capital": "Port Louis",
+            "nativeName": "Maurice",
+            "alpha2Code": "MU",
+            "alpha3Code": "MUS",
+            "areaCode": "+230",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "MRI",
+            "flag": "https://restcountries.eu/data/mus.svg"
+          },
+          {
+            "name": "Monaco",
+            "domain": ".mc",
+            "language": "Monegasque",
+            "capital": "Monaco",
+            "nativeName": "Monaco",
+            "alpha2Code": "MC",
+            "alpha3Code": "MCO",
+            "areaCode": "+377",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "cioc": "MON",
+            "flag": "https://restcountries.eu/data/mco.svg"
+          },
+          {
+            "name": "Mongolia",
+            "domain": ".mn",
+            "language": "Mongolian",
+            "capital": "Ulan Bator",
+            "nativeName": "Монгол улс",
+            "alpha2Code": "MN",
+            "alpha3Code": "MNG",
+            "areaCode": "+976",
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "cioc": "MGL",
+            "flag": "https://restcountries.eu/data/mng.svg"
+          },
+          {
+            "name": "Korea (Democratic People's Republic of)",
+            "domain": ".kp",
+            "language": "North Korean",
+            "capital": "Pyongyang",
+            "nativeName": "북한",
+            "alpha2Code": "KP",
+            "alpha3Code": "PRK",
+            "areaCode": "+850",
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "cioc": "PRK",
+            "flag": "https://restcountries.eu/data/prk.svg"
+          },
+          {
+            "name": "Seychelles",
+            "domain": ".sc",
+            "language": "Seychellois",
+            "capital": "Victoria",
+            "nativeName": "Seychelles",
+            "alpha2Code": "SC",
+            "alpha3Code": "SYC",
+            "areaCode": "+248",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "SEY",
+            "flag": "https://restcountries.eu/data/syc.svg"
+          },
+          {
+            "name": "Slovakia",
+            "domain": ".sk",
+            "language": "Slovak",
+            "capital": "Bratislava",
+            "nativeName": "Slovensko",
+            "alpha2Code": "SK",
+            "alpha3Code": "SVK",
+            "areaCode": "+421",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": "SVK",
+            "flag": "https://restcountries.eu/data/svk.svg"
+          },
+          {
+            "name": "Yemen",
+            "domain": ".ye",
+            "language": "Yemeni",
+            "capital": "Sana'a",
+            "nativeName": "اليَمَن",
+            "alpha2Code": "YE",
+            "alpha3Code": "YEM",
+            "areaCode": "+967",
+            "region": "Asia",
+            "subregion": "Western Asia",
+            "cioc": "YEM",
+            "flag": "https://restcountries.eu/data/yem.svg"
+          },
+          {
+            "name": "Ghana",
+            "domain": ".gh",
+            "language": "Ghanaian",
+            "capital": "Accra",
+            "nativeName": "Ghana",
+            "alpha2Code": "GH",
+            "alpha3Code": "GHA",
+            "areaCode": "+233",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "GHA",
+            "flag": "https://restcountries.eu/data/gha.svg"
+          },
+          {
+            "name": "Guadeloupe",
+            "domain": ".gp",
+            "language": "Guadeloupian",
+            "capital": "Basse-Terre",
+            "nativeName": "Guadeloupe",
+            "alpha2Code": "GP",
+            "alpha3Code": "GLP",
+            "areaCode": "+590",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/glp.svg"
+          },
+          {
+            "name": "Malaysia",
+            "domain": ".my",
+            "language": "Malaysian",
+            "capital": "Kuala Lumpur",
+            "nativeName": "Malaysia",
+            "alpha2Code": "MY",
+            "alpha3Code": "MYS",
+            "areaCode": "+60",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "MAS",
+            "flag": "https://restcountries.eu/data/mys.svg"
+          },
+          {
+            "name": "Mali",
+            "domain": ".ml",
+            "language": "Malian",
+            "capital": "Bamako",
+            "nativeName": "Mali",
+            "alpha2Code": "ML",
+            "alpha3Code": "MLI",
+            "areaCode": "+223",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "MLI",
+            "flag": "https://restcountries.eu/data/mli.svg"
+          },
+          {
+            "name": "Mauritania",
+            "domain": ".mr",
+            "language": "Mauritanian",
+            "capital": "Nouakchott",
+            "nativeName": "موريتانيا",
+            "alpha2Code": "MR",
+            "alpha3Code": "MRT",
+            "areaCode": "+222",
+            "region": "Africa",
+            "subregion": "Western Africa",
+            "cioc": "MTN",
+            "flag": "https://restcountries.eu/data/mrt.svg"
+          },
+          {
+            "name": "Paraguay",
+            "domain": ".py",
+            "language": "Paraguayan",
+            "capital": "Asunción",
+            "nativeName": "Paraguay",
+            "alpha2Code": "PY",
+            "alpha3Code": "PRY",
+            "areaCode": "+595",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "PAR",
+            "flag": "https://restcountries.eu/data/pry.svg"
+          },
+          {
+            "name": "Philippines",
+            "domain": ".ph",
+            "language": "Filipino",
+            "capital": "Manila",
+            "nativeName": "Pilipinas",
+            "alpha2Code": "PH",
+            "alpha3Code": "PHL",
+            "areaCode": "+63",
+            "region": "Asia",
+            "subregion": "South-Eastern Asia",
+            "cioc": "PHI",
+            "flag": "https://restcountries.eu/data/phl.svg"
+          },
+          {
+            "name": "Republic of Kosovo",
+            "domain": "",
+            "language": "Kosovar",
+            "capital": "Pristina",
+            "nativeName": "Republika e Kosovës",
+            "alpha2Code": "XK",
+            "alpha3Code": "KOS",
+            "areaCode": "+383",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "cioc": null,
+            "flag": "https://restcountries.eu/data/kos.svg"
+          },
+          {
+            "name": "Somalia",
+            "domain": ".so",
+            "language": "Somali",
+            "capital": "Mogadishu",
+            "nativeName": "Soomaaliya",
+            "alpha2Code": "SO",
+            "alpha3Code": "SOM",
+            "areaCode": "+252",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "SOM",
+            "flag": "https://restcountries.eu/data/som.svg"
+          },
+          {
+            "name": "Sri Lanka",
+            "domain": ".lk",
+            "language": "Sri Lankan",
+            "capital": "Colombo",
+            "nativeName": "śrī laṃkāva",
+            "alpha2Code": "LK",
+            "alpha3Code": "LKA",
+            "areaCode": "+94",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "SRI",
+            "flag": "https://restcountries.eu/data/lka.svg"
+          },
+          {
+            "name": "Sudan",
+            "domain": ".sd",
+            "language": "Sudanese",
+            "capital": "Khartoum",
+            "nativeName": "السودان",
+            "alpha2Code": "SD",
+            "alpha3Code": "SDN",
+            "areaCode": "+249",
+            "region": "Africa",
+            "subregion": "Northern Africa",
+            "cioc": "SUD",
+            "flag": "https://restcountries.eu/data/sdn.svg"
+          },
+          {
+            "name": "Estonia",
+            "domain": ".ee",
+            "language": "Estonian",
+            "capital": "Tallinn",
+            "nativeName": "Eesti",
+            "alpha2Code": "EE",
+            "alpha3Code": "EST",
+            "areaCode": "+372",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "EST",
+            "flag": "https://restcountries.eu/data/est.svg"
+          },
+          {
+            "name": "Holy See",
+            "domain": ".va",
+            "language": "",
+            "capital": "Rome",
+            "nativeName": "Sancta Sedes",
+            "alpha2Code": "VA",
+            "alpha3Code": "VAT",
+            "areaCode": "+379",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/vat.svg"
+          },
+          {
+            "name": "Madagascar",
+            "domain": ".mg",
+            "language": "Malagasy",
+            "capital": "Antananarivo",
+            "nativeName": "Madagasikara",
+            "alpha2Code": "MG",
+            "alpha3Code": "MDG",
+            "areaCode": "+261",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "MAD",
+            "flag": "https://restcountries.eu/data/mdg.svg"
+          },
+          {
+            "name": "Maldives",
+            "domain": ".mv",
+            "language": "Maldivan",
+            "capital": "Malé",
+            "nativeName": "Maldives",
+            "alpha2Code": "MV",
+            "alpha3Code": "MDV",
+            "areaCode": "+960",
+            "region": "Asia",
+            "subregion": "Southern Asia",
+            "cioc": "MDV",
+            "flag": "https://restcountries.eu/data/mdv.svg"
+          },
+          {
+            "name": "Mozambique",
+            "domain": ".mz",
+            "language": "Mozambican",
+            "capital": "Maputo",
+            "nativeName": "Moçambique",
+            "alpha2Code": "MZ",
+            "alpha3Code": "MOZ",
+            "areaCode": "+258",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "MOZ",
+            "flag": "https://restcountries.eu/data/moz.svg"
+          },
+          {
+            "name": "Nauru",
+            "domain": ".nr",
+            "language": "Nauruan",
+            "capital": "Yaren",
+            "nativeName": "Nauru",
+            "alpha2Code": "NR",
+            "alpha3Code": "NRU",
+            "areaCode": "+674",
+            "region": "Oceania",
+            "subregion": "Micronesia",
+            "cioc": "NRU",
+            "flag": "https://restcountries.eu/data/nru.svg"
+          },
+          {
+            "name": "Saint Lucia",
+            "domain": ".lc",
+            "language": "Saint Lucian",
+            "capital": "Castries",
+            "nativeName": "Saint Lucia",
+            "alpha2Code": "LC",
+            "alpha3Code": "LCA",
+            "areaCode": "+1758",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "LCA",
+            "flag": "https://restcountries.eu/data/lca.svg"
+          },
+          {
+            "name": "Sao Tome and Principe",
+            "domain": ".st",
+            "language": "Sao Tomean",
+            "capital": "São Tomé",
+            "nativeName": "São Tomé e Príncipe",
+            "alpha2Code": "ST",
+            "alpha3Code": "STP",
+            "areaCode": "+239",
+            "region": "Africa",
+            "subregion": "Middle Africa",
+            "cioc": "STP",
+            "flag": "https://restcountries.eu/data/stp.svg"
+          },
+          {
+            "name": "South Georgia and the South Sandwich Islands",
+            "domain": ".gs",
+            "language": "South Georgia and the South Sandwich Islander",
+            "capital": "King Edward Point",
+            "nativeName": "South Georgia",
+            "alpha2Code": "GS",
+            "alpha3Code": "SGS",
+            "areaCode": "+500",
+            "region": "Americas",
+            "subregion": "South America",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/sgs.svg"
+          },
+          {
+            "name": "Tonga",
+            "domain": ".to",
+            "language": "Tongan",
+            "capital": "Nuku'alofa",
+            "nativeName": "Tonga",
+            "alpha2Code": "TO",
+            "alpha3Code": "TON",
+            "areaCode": "+676",
+            "region": "Oceania",
+            "subregion": "Polynesia",
+            "cioc": "TGA",
+            "flag": "https://restcountries.eu/data/ton.svg"
+          },
+          {
+            "name": "United States of America",
+            "domain": ".us",
+            "language": "American",
+            "capital": "Washington, D.C.",
+            "nativeName": "United States",
+            "alpha2Code": "US",
+            "alpha3Code": "USA",
+            "areaCode": "+1",
+            "region": "Americas",
+            "subregion": "Northern America",
+            "cioc": "USA",
+            "flag": "https://restcountries.eu/data/usa.svg"
+          },
+          {
+            "name": "Uzbekistan",
+            "domain": ".uz",
+            "language": "Uzbekistani",
+            "capital": "Tashkent",
+            "nativeName": "O‘zbekiston",
+            "alpha2Code": "UZ",
+            "alpha3Code": "UZB",
+            "areaCode": "+998",
+            "region": "Asia",
+            "subregion": "Central Asia",
+            "cioc": "UZB",
+            "flag": "https://restcountries.eu/data/uzb.svg"
+          },
+          {
+            "name": "Zimbabwe",
+            "domain": ".zw",
+            "language": "Zimbabwean",
+            "capital": "Harare",
+            "nativeName": "Zimbabwe",
+            "alpha2Code": "ZW",
+            "alpha3Code": "ZWE",
+            "areaCode": "+263",
+            "region": "Africa",
+            "subregion": "Eastern Africa",
+            "cioc": "ZIM",
+            "flag": "https://restcountries.eu/data/zwe.svg"
+          },
+          {
+            "name": "Dominica",
+            "domain": ".dm",
+            "language": "Dominican",
+            "capital": "Roseau",
+            "nativeName": "Dominica",
+            "alpha2Code": "DM",
+            "alpha3Code": "DMA",
+            "areaCode": "+1767",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "DMA",
+            "flag": "https://restcountries.eu/data/dma.svg"
+          },
+          {
+            "name": "Gibraltar",
+            "domain": ".gi",
+            "language": "Gibraltar",
+            "capital": "Gibraltar",
+            "nativeName": "Gibraltar",
+            "alpha2Code": "GI",
+            "alpha3Code": "GIB",
+            "areaCode": "+350",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/gib.svg"
+          },
+          {
+            "name": "Guernsey",
+            "domain": ".gg",
+            "language": "Channel Islander",
+            "capital": "St. Peter Port",
+            "nativeName": "Guernsey",
+            "alpha2Code": "GG",
+            "alpha3Code": "GGY",
+            "areaCode": "+44",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/ggy.svg"
+          },
+          {
+            "name": "Honduras",
+            "domain": ".hn",
+            "language": "Honduran",
+            "capital": "Tegucigalpa",
+            "nativeName": "Honduras",
+            "alpha2Code": "HN",
+            "alpha3Code": "HND",
+            "areaCode": "+504",
+            "region": "Americas",
+            "subregion": "Central America",
+            "cioc": "HON",
+            "flag": "https://restcountries.eu/data/hnd.svg"
+          },
+          {
+            "name": "Isle of Man",
+            "domain": ".im",
+            "language": "Manx",
+            "capital": "Douglas",
+            "nativeName": "Isle of Man",
+            "alpha2Code": "IM",
+            "alpha3Code": "IMN",
+            "areaCode": "+44",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/imn.svg"
+          },
+          {
+            "name": "Montenegro",
+            "domain": ".me",
+            "language": "Montenegrin",
+            "capital": "Podgorica",
+            "nativeName": "Црна Гора",
+            "alpha2Code": "ME",
+            "alpha3Code": "MNE",
+            "areaCode": "+382",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "MNE",
+            "flag": "https://restcountries.eu/data/mne.svg"
+          },
+          {
+            "name": "Namibia",
+            "domain": ".na",
+            "language": "Namibian",
+            "capital": "Windhoek",
+            "nativeName": "Namibia",
+            "alpha2Code": "NA",
+            "alpha3Code": "NAM",
+            "areaCode": "+264",
+            "region": "Africa",
+            "subregion": "Southern Africa",
+            "cioc": "NAM",
+            "flag": "https://restcountries.eu/data/nam.svg"
+          },
+          {
+            "name": "New Caledonia",
+            "domain": ".nc",
+            "language": "New Caledonian",
+            "capital": "Nouméa",
+            "nativeName": "Nouvelle-Calédonie",
+            "alpha2Code": "NC",
+            "alpha3Code": "NCL",
+            "areaCode": "+687",
+            "region": "Oceania",
+            "subregion": "Melanesia",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/ncl.svg"
+          },
+          {
+            "name": "San Marino",
+            "domain": ".sm",
+            "language": "Sammarinese",
+            "capital": "City of San Marino",
+            "nativeName": "San Marino",
+            "alpha2Code": "SM",
+            "alpha3Code": "SMR",
+            "areaCode": "+378",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "cioc": "SMR",
+            "flag": "https://restcountries.eu/data/smr.svg"
+          },
+          {
+            "name": "Sint Maarten (Dutch part)",
+            "domain": ".sx",
+            "language": "Dutch",
+            "capital": "Philipsburg",
+            "nativeName": "Sint Maarten",
+            "alpha2Code": "SX",
+            "alpha3Code": "SXM",
+            "areaCode": "+1721",
+            "region": "Americas",
+            "subregion": "Caribbean",
+            "cioc": "",
+            "flag": "https://restcountries.eu/data/sxm.svg"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Datum"
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "Datum": {
+      "title": "Datum",
+      "example": {
+        "name": "American Samoa",
+        "domain": ".as",
+        "language": "American Samoan",
+        "capital": "Pago Pago",
+        "nativeName": "American Samoa",
+        "alpha2Code": "AS",
+        "alpha3Code": "ASM",
+        "areaCode": "+1684",
+        "region": "Oceania",
+        "subregion": "Polynesia",
+        "cioc": "ASA",
+        "flag": "https://restcountries.eu/data/asm.svg"
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "capital": {
+          "type": "string"
+        },
+        "nativeName": {
+          "type": "string"
+        },
+        "alpha2Code": {
+          "type": "string"
+        },
+        "alpha3Code": {
+          "type": "string"
+        },
+        "areaCode": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "subregion": {
+          "type": "string"
+        },
+        "cioc": {
+          "type": "string"
+        },
+        "flag": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "domain",
+        "language",
+        "capital",
+        "nativeName",
+        "alpha2Code",
+        "alpha3Code",
+        "areaCode",
+        "region",
+        "subregion",
+        "cioc",
+        "flag"
+      ]
+    },
+    "addrecentvideoforuserrequest": {
+      "title": "addrecentvideoforuserrequest",
+      "example": {
+        "programID": "5fd85d79b3839b137872f0a5"
+      },
+      "type": "object",
+      "properties": {
+        "programID": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "programID"
+      ]
+    },
+    "apicreatepushnotificationrequest": {
+      "title": "apicreatepushnotificationrequest",
+      "example": {
+        "senderID": "5f8fbbfff125ce0d9132220b",
+        "receiverID": "5f8d0c380e8ccd07ac3130b3",
+        "programID": "5fd85d71b3839b137872f083",
+        "title": "test-4",
+        "body": "test-4"
+      },
+      "type": "object",
+      "properties": {
+        "senderID": {
+          "type": "string"
+        },
+        "receiverID": {
+          "type": "string"
+        },
+        "programID": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "senderID",
+        "receiverID",
+        "programID",
+        "title",
+        "body"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "membership"
+    },
+    {
+      "name": "company-information"
+    },
+    {
+      "name": "privacy-policy"
+    },
+    {
+      "name": "terms-and-conditions"
+    },
+    {
+      "name": "video-manage-policy"
+    },
+    {
+      "name": "email"
+    },
+    {
+      "name": "phone number"
+    },
+    {
+      "name": "pin code"
+    },
+    {
+      "name": "like & unlike"
+    },
+    {
+      "name": "deactive plan"
+    },
+    {
+      "name": "setting"
+    },
+    {
+      "name": "user"
+    },
+    {
+      "name": "categories-set"
+    },
+    {
+      "name": "recent video"
+    },
+    {
+      "name": "push-notification"
+    }
+  ]
+}

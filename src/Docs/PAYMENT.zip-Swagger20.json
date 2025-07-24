@@ -1,0 +1,391 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "OMN_PAYMENT",
+    "contact": {}
+  },
+  "host": "api.omnadmin.xyz",
+  "basePath": "/user/payment",
+  "securityDefinitions": {},
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/info-card-user": {
+      "get": {
+        "summary": "Get user payment",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Getuserpayment",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/add-card-user": {
+      "post": {
+        "summary": "Add card user",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Addcarduser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/AddcarduserRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/formpay": {
+      "post": {
+        "summary": "Change transaction info",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Changetransactioninfo",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ChangetransactioninfoRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/history-card": {
+      "get": {
+        "summary": "Get history transaction",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Gethistorytransaction",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/renew": {
+      "post": {
+        "description": "Use this API in case membership of user has expired for a long time",
+        "summary": "Renew payment",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Renewpayment",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/RenewpaymentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/korean-banks": {
+      "get": {
+        "summary": "Get korean banks",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getkoreanbanks",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AddcarduserRequest": {
+      "title": "AddcarduserRequest",
+      "example": {
+        "cardNumber": "4028571220814455",
+        "cardExpire": "2307",
+        "regNo": "880421",
+        "cardPw": "13",
+        "cardQuota": "00",
+        "buyerTel": ""
+      },
+      "type": "object",
+      "properties": {
+        "cardNumber": {
+          "type": "string"
+        },
+        "cardExpire": {
+          "type": "string"
+        },
+        "regNo": {
+          "type": "string"
+        },
+        "cardPw": {
+          "type": "string"
+        },
+        "cardQuota": {
+          "type": "string"
+        },
+        "buyerTel": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "cardNumber",
+        "cardExpire",
+        "regNo",
+        "cardPw",
+        "cardQuota",
+        "buyerTel"
+      ]
+    },
+    "ChangetransactioninfoRequest": {
+      "title": "ChangetransactioninfoRequest",
+      "example": {
+        "buyerEmail": "dev@brickmate.kr",
+        "buyerName": "omn",
+        "buyerTel": "01234567890",
+        "card": 1,
+        "cardExpire": "2307",
+        "cardNumber": "4028571220814413",
+        "cardPw": "13",
+        "cardQuota": "00",
+        "regNo": "880421"
+      },
+      "type": "object",
+      "properties": {
+        "buyerEmail": {
+          "type": "string"
+        },
+        "buyerName": {
+          "type": "string"
+        },
+        "buyerTel": {
+          "type": "string"
+        },
+        "card": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "cardExpire": {
+          "type": "string"
+        },
+        "cardNumber": {
+          "type": "string"
+        },
+        "cardPw": {
+          "type": "string"
+        },
+        "cardQuota": {
+          "type": "string"
+        },
+        "regNo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "buyerEmail",
+        "buyerName",
+        "buyerTel",
+        "card",
+        "cardExpire",
+        "cardNumber",
+        "cardPw",
+        "cardQuota",
+        "regNo"
+      ]
+    },
+    "RenewpaymentRequest": {
+      "title": "RenewpaymentRequest",
+      "example": {
+        "use": 1,
+        "goodName": "basic",
+        "price": "10",
+        "buyerName": "OMN",
+        "buyerTel": "01077933984",
+        "cardNumber": "4028571220814412",
+        "cardExpire": "2307",
+        "regNo": "880421",
+        "cardPw": "13",
+        "cardQuota": "00",
+        "currency": "USD"
+      },
+      "type": "object",
+      "properties": {
+        "use": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "goodName": {
+          "type": "string"
+        },
+        "price": {
+          "type": "string"
+        },
+        "buyerName": {
+          "type": "string"
+        },
+        "buyerTel": {
+          "type": "string"
+        },
+        "cardNumber": {
+          "type": "string"
+        },
+        "cardExpire": {
+          "type": "string"
+        },
+        "regNo": {
+          "type": "string"
+        },
+        "cardPw": {
+          "type": "string"
+        },
+        "cardQuota": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "use",
+        "goodName",
+        "price",
+        "buyerName",
+        "buyerTel",
+        "cardNumber",
+        "cardExpire",
+        "regNo",
+        "cardPw",
+        "cardQuota",
+        "currency"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Web"
+    },
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "OMN_PAYMENT",
+    "contact": {}
+  },
+  "host": "13.209.212.38:3000",
+  "basePath": "/user/payment",
+  "securityDefinitions": {},
+  "schemes": [],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/info-card-user": {
+      "get": {
+        "summary": "Get user payment",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Getuserpayment",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/add-card-user": {
+      "post": {
+        "summary": "Add card user",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Addcarduser",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/AddcarduserRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/formpay": {
+      "post": {
+        "summary": "Change transaction info",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Changetransactioninfo",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ChangetransactioninfoRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/history-card": {
+      "get": {
+        "summary": "Get history transaction",
+        "tags": [
+          "Web"
+        ],
+        "operationId": "Gethistorytransaction",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AddcarduserRequest": {
+      "title": "AddcarduserRequest",
+      "example": {
+        "cardNumber": "4028571220814455",
+        "cardExpire": "2307",
+        "regNo": "880421",
+        "cardPw": "13",
+        "cardQuota": "00",
+        "buyerTel": ""
+      },
+      "type": "object",
+      "properties": {
+        "cardNumber": {
+          "type": "string"
+        },
+        "cardExpire": {
+          "type": "string"
+        },
+        "regNo": {
+          "type": "string"
+        },
+        "cardPw": {
+          "type": "string"
+        },
+        "cardQuota": {
+          "type": "string"
+        },
+        "buyerTel": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "cardNumber",
+        "cardExpire",
+        "regNo",
+        "cardPw",
+        "cardQuota",
+        "buyerTel"
+      ]
+    },
+    "ChangetransactioninfoRequest": {
+      "title": "ChangetransactioninfoRequest",
+      "example": {
+        "buyerEmail": "dev@brickmate.kr",
+        "buyerName": "omn",
+        "buyerTel": "01234567890",
+        "card": 1,
+        "cardExpire": "2307",
+        "cardNumber": "4028571220814413",
+        "cardPw": "13",
+        "cardQuota": "00",
+        "regNo": "880421"
+      },
+      "type": "object",
+      "properties": {
+        "buyerEmail": {
+          "type": "string"
+        },
+        "buyerName": {
+          "type": "string"
+        },
+        "buyerTel": {
+          "type": "string"
+        },
+        "card": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "cardExpire": {
+          "type": "string"
+        },
+        "cardNumber": {
+          "type": "string"
+        },
+        "cardPw": {
+          "type": "string"
+        },
+        "cardQuota": {
+          "type": "string"
+        },
+        "regNo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "buyerEmail",
+        "buyerName",
+        "buyerTel",
+        "card",
+        "cardExpire",
+        "cardNumber",
+        "cardPw",
+        "cardQuota",
+        "regNo"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Web"
+    }
+  ]
+}

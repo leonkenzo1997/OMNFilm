@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <style type="text/css">
+        body {
+            background-color: #efefef;
+        }
+
+        body,
+        tr,
+        td {
+            font-size: 9pt;
+            font-family: 굴림, verdana;
+            color: #433F37;
+            line-height: 19px;
+        }
+
+        table,
+        img {
+            border: none
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript" src="https://stdpay.inicis.com/stdjs/INIStdPay.js"
+        charset="UTF-8"></script>
+
+    <!-- 테스트 JS(샘플에 제공된 테스트 MID 전용) -->
+    <!-- <script language="javascript" type="text/javascript" src="https://stgstdpay.inicis.com/stdjs/INIStdPay.js" charset="UTF-8"></script> -->
+
+    <script type="text/javascript">
+        function paybtn() {
+            var email = document.getElementById("buyeremail").value;
+            var acceptmethod = document.getElementById("acceptmethod").value;
+
+            if (email !== "") {
+                fetch('<%= data.url %>/user/check-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ userEmail: document.getElementById("buyeremail").value })
+                })
+                    .then(function (response) {
+                        return response.json();
+                    }).then(function (data) {
+                        if (!data.existEmail) {
+                            alert("Email doesn't exist");
+                            window.close();
+                        } else {
+                            INIStdPay.pay('SendPayForm_id');
+                        }
+                    }).catch(function (e) {
+                        alert("Error request,please again");
+                    });
+            } else {
+                if (email === "") {
+                    alert("Email couldn't null");
+                    window.close();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#242424" leftmargin=0 topmargin=15 marginwidth=0 marginheight=0 bottommargin=0
+    rightmargin=0>
+    <div hidden
+        style="padding:10px;background-color:#f3f3f3;width:100%;font-size:13px;color: #ffffff;background-color: #000000;text-align: center">
+        이니시스 표준결제 결제요청 샘플
+    </div>
+    <table width="650" border="0" cellspacing="0" cellpadding="0" style="padding:10px;" align="center">
+        <tr>
+            <td bgcolor="6095BC" align="center" style="padding:10px">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="padding:20px">
+                    <tr>
+                        <td>이 페이지는 INIpay Standard 결제요청을 위한 예시입니다.<br /><br />
+                            결제처리를 위한 action등의 모든 동작은 Import 된 스크립트에 의해 자동처리됩니다.<br /><br />
+                            Form에 설정된 모든 필드의 name은 대소문자 구분하며,<br />
+                            이 Sample은 결제를 위해서 설정된 Form은 테스트 / 이해돕기를 위해서 모두 type="text"로 설정되어 있습니다.<br />
+                            운영에 적용시에는 일부 가맹점에서 필요에 의해 사용자가 변경하는 경우를 제외하고<br />
+                            모두 type="hidden"으로 변경하여 사용하시기 바랍니다.<br /><br />
+
+                            <font color="#336699"><strong>함께 제공되는 메뉴얼을 참조하여 작성 개발하시기 바랍니다.</strong></font>
+                            <br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- 결제요청 -->
+                            <button onclick="paybtn()" style="padding:10px">결제요청</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td style="text-align:left;">
+                                        <form id="SendPayForm_id" name="" method="POST">
+
+                                            <!-- 필수 -->
+                                            <br /><b>***** 필 수 *****</b>
+                                            <div
+                                                style="border:2px #dddddd double;padding:10px;background-color:#f3f3f3;">
+                                                <input type="hidden" style="width:100%;" name="version" value="1.0">
+                                                <input type="hidden" style="width:100%;" name="mid"
+                                                    value="<%= data.mid %>">
+
+                                                <br /><b style="color: red;">goodname *</b> :
+                                                <br /><input style="width:100%;" name="goodname"
+                                                    value="<%= data.goodname %>">
+
+                                                <input type="hidden" style="width:100%;" name="oid"
+                                                    value="<%= data.oid %>">
+
+                                                <br /><b>price</b> :
+                                                <br /><input readonly style="width:100%;" name="price"
+                                                    value="<%= data.price %>">
+
+                                                <br /><b>currency</b> :
+                                                <br />[WON|USD]
+                                                <br /><input readonly style="width:100%;" name="currency"
+                                                    value="<%= data.unit %>">
+
+                                                <br /><b style="color: red;">buyername *</b> :
+                                                <br /><input style="width:100%;" name="buyername"
+                                                    value="<%= data.buyer %>">
+
+                                                <br /><b style="color: red;">buyertel *</b> :
+                                                <br /><input style="width:100%;" name="buyertel"
+                                                    value="<%= data.phone %>">
+
+                                                <br /><b style="color: red;">buyeremail *</b> :
+                                                <br /><input id="buyeremail" style="width:100%;" name="buyeremail"
+                                                    value="<%= data.email %>">
+
+                                                <input type="hidden" style="width:100%;" name="timestamp"
+                                                    value="<%= data.timestamp %>">
+
+                                                <!-- <br/><b>signature</b> : -->
+                                                <input type="hidden" style="width:100%;" name="signature"
+                                                    value="<%= data.signature %>">
+
+                                                <input type="hidden" style="width:100%;" name="returnUrl"
+                                                    value="<%= data.returnUrl %>">
+                                                <!--
+                                                    payViewType이 popup일 경우 crossDomain이슈로 우회처리 
+                                                    <input  style="width:100%;" name="returnUrl" value="<?php echo $siteDomain ?>/INIStdPayRelay.php" >
+												    -->
+                                                <input type="hidden" style="width:100%;" name="mKey"
+                                                    value="<%= data.mKey %>">
+
+                                            </div>
+
+                                            <br /><br />
+                                            <b>***** 기본 옵션 *****</b>
+                                            <div
+                                                style="border:2px #dddddd double;padding:10px;background-color:#f3f3f3;">
+                                                <b>gopaymethod</b> : 결제 수단 선택
+                                                <br />ex) Card (계약 결제 수단이 존재하지 않을 경우 에러로 리턴)
+                                                <br />사용 가능한 입력 값
+                                                <br />Card,DirectBank,HPP,Vbank,kpay,Swallet,Paypin,EasyPay,PhoneBill,GiftCard,EWallet
+                                                <br />onlypoint,onlyocb,onyocbplus,onlygspt,onlygsptplus,onlyupnt,onlyupntplus
+                                                <br /><input style="width:100%;" name="gopaymethod"
+                                                    value="<%= data.gopaymethod %>">
+                                                <br /><br />
+
+                                                <br />
+                                                <b>offerPeriod</b> : 제공기간
+                                                <br />ex)20150101-20150331, [Y2:년단위결제, M2:월단위결제, yyyyMMdd-yyyyMMdd :
+                                                시작일-종료일]
+                                                <br /><input style="width:100%;" name="offerPeriod"
+                                                    value="<%= data.offerPeriod %>">
+                                                <br /><br />
+
+                                                <br /><b style="color: red;">acceptmethod *</b> : acceptmethod
+                                                <br />acceptmethod ex)
+                                                CARDPOINT:SLIMQUOTA(코드-개월:개월):no_receipt:va_receipt:vbank(20160425):va_ckprice:
+                                                <br />KWPY_TYPE(0):KWPY_VAT(10|0) 기타 옵션 정보 및 설명은 연동정의보 참조 구분자 ":"
+                                                <br /><input style="width:100%;" id="acceptmethod" name="acceptmethod"
+                                                    value="<%= data.acceptmethod %>">
+                                            </div>
+
+                                            <br /><br />
+                                            <b>***** 표시 옵션 *****</b>
+                                            <div
+                                                style="border:2px #dddddd double;padding:10px;background-color:#f3f3f3;">
+                                                <br /><b>languageView</b> : 초기 표시 언어
+                                                <br />[ko|en] (default:ko)
+                                                <br /><input style="width:100%;" name="languageView"
+                                                    value="<%= data.languageView %>">
+
+                                                <br /><b>charset</b> : 리턴 인코딩
+                                                <br />[UTF-8|EUC-KR] (default:UTF-8)
+                                                <br /><input style="width:100%;" name="charset"
+                                                    value="<%= data.charset %>">
+
+                                                <br /><b>payViewType</b> : 결제창 표시방법
+                                                <br />[overlay] (default:overlay)
+                                                <br /><input style="width:100%;" name="payViewType"
+                                                    value="<%= data.payViewType %>">
+
+                                                <br /><input type="hidden" style="width:100%;" name="closeUrl"
+                                                    value="<%= data.closeUrl %>">
+
+                                                <br /><input type="hidden" style="width:100%;" name="popupUrl"
+                                                    value="<%= data.popupUrl %>">
+
+                                            </div>
+
+                                            <b>***** 결제 수단별 옵션 *****</b>
+                                            <br />
+                                            <b>-- 카드(간편결제도 사용) --</b>
+                                            <div
+                                                style="border:2px #cccccc solid;padding:10px;background-color:#f3f3f3;">
+
+                                                <br /><b>quotabase</b> : 할부 개월
+                                                <br />ex) 2:3:4
+                                                <br /><input style="width:100%;" name="quotabase"
+                                                    value="<%= data.cardQuotaBase %>">
+
+                                                <br /><b>ini_onlycardcode</b> : 중복 카드 코드
+                                                <br />ex) 01:03:04:11
+                                                <br /><input style="width:100%;" name="ini_onlycardcode" value="">
+
+                                                <br /><b>ini_cardcode</b> : 카드 코드
+                                                <br />ex) 14
+                                                <br /><input style="width:100%;" name="ini_cardcode" value="">
+
+                                                <br /><b>ansim_quota</b> : 할부 선택
+                                                <br />ex) 3
+                                                <br /><input style="width:100%;" name="ansim_quota" value="">
+
+                                            </div>
+
+                                            <b>-- 가상계좌 --</b>
+                                            <div
+                                                style="border:2px #cccccc solid;padding:10px;background-color:#f3f3f3;">
+                                                <br /><b>INIregno</b> : 주민번호 설정 기능
+                                                <br />13자리(주민번호),10자리(사업자번호),미입력시(화면에서입력가능)
+                                                <br /><input style="width:100%;" name="INIregno" value="">
+                                            </div>
+
+                                            <br /><br />
+                                            <b>***** 추가 옵션 *****</b>
+                                            <div
+                                                style="border:2px #dddddd double;padding:10px;background-color:#f3f3f3;">
+                                                <br /><b>merchantData</b> : 가맹점 관리데이터(2000byte)
+                                                <br />**인증결과 리턴시 함께 전달됨(한글 지원 안됨, 개인정보 암호화(권장))
+                                                <br /><input style="width:100%;" name="merchantData" value="">
+                                            </div>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

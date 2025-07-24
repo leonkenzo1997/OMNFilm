@@ -1,0 +1,132 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "DRM",
+    "contact": {}
+  },
+  "host": "license.pallycon.com",
+  "basePath": "/ri",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/licenseManager.do": {
+      "post": {
+        "summary": "Get License for FPS",
+        "tags": [
+          "Pallycon"
+        ],
+        "operationId": "GetLicenseforFPS",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "pallycon-customdata-v2",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "spc",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/fpsKeyManager.do": {
+      "get": {
+        "summary": "Get FPS Cert",
+        "tags": [
+          "Pallycon"
+        ],
+        "operationId": "GetFPSCert",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "siteId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "description": "For playing Video",
+        "summary": "Get DRM Token",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "GetDRMToken",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type-drm",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Pallycon"
+    },
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}

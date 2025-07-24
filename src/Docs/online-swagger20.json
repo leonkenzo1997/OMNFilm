@@ -1,0 +1,420 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "OMN_ONLINE",
+    "contact": {}
+  },
+  "host": "13.209.212.38:3000",
+  "basePath": "/online",
+  "securityDefinitions": {},
+  "schemes": [],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/homeset": {
+      "get": {
+        "summary": "Get home set online",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Gethomesetonline",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/homeset/5f755dfa31aaeb4e8bc7b624": {
+      "get": {
+        "summary": "Get detail home set online",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getdetailhomesetonline",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "type of id in params (1 = category set || 2 = list)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/top": {
+      "get": {
+        "summary": "Get top 10 program",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Gettop10program",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/trending": {
+      "get": {
+        "summary": "Get trending program",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Gettrendingprogram",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/mylist": {
+      "get": {
+        "summary": "Get program mylist",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getprogrammylist",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/other": {
+      "get": {
+        "summary": "Get data online other",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getdataonlineother",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "page"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/user-categories-set": {
+      "get": {
+        "summary": "Get data online get survey (User categories set)",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getdataonlinegetsurvey(Usercategoriesset)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/list/5f755e2731aaeb4e8bc7b626": {
+      "get": {
+        "summary": "Get data online list",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getdataonlinelist",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/5fbf7bae06f37d2d0cc9b5da": {
+      "get": {
+        "summary": "Get detail program online",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getdetailprogramonline",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/similar/5fbf7bae06f37d2d0cc9b5da": {
+      "get": {
+        "summary": "Get similar programs online",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Getsimilarprogramsonline",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/search": {
+      "get": {
+        "description": "{{url}}/online/search?programName=1",
+        "summary": "search OMN online",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "searchOMNonline",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/mylist/add": {
+      "post": {
+        "description": "{{url}}/online/mylist/add",
+        "summary": "api adding my list",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "apiaddingmylist",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/apiaddingmylistrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "apiaddingmylistrequest": {
+      "title": "apiaddingmylistrequest",
+      "example": {
+        "id": "5fec22a9eadfeb012c45d31e"
+      },
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}

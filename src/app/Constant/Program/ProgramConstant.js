@@ -1,0 +1,55 @@
+module.exports = {
+    notFound: function (id) {
+        return 'Not found id: ' + id + ' in program!!!';
+    },
+    parentIDNotFound: 'Parent ID not found!',
+    typeParentInvalid: 'Program type parent invalid',
+    updateParentAdmin: 'Update only episode in season',
+    clearProgramSuccess: 'Clear program success',
+    FIELD_SELECT_PROGRAM_HOME: [
+        'programThumbnail',
+        'slugName',
+        'programImageTitle',
+        'programTypeVideo',
+        'programName',
+        'programTitle',
+        'programImagePosterNoTitle',
+        'programSubTitle',
+        'programSummary',
+        'programTotalView',
+        'programType',
+        'linkVideo',
+        'programImagePoster',
+        'programImageBracter',
+        'isLike',
+        'isUnlike',
+        'videoRank',
+        'programCurrentStatus',
+        'linkVideoDRM',
+        'programVideoSetting',
+        'videoThumbnail',
+        'totalTime',
+        'programImagex1',
+        'programImagex2',
+        'programImageTitleResize1',
+        'programImageTitleResize2',
+        'programOriginalPoster',
+        'programImageTitleResize1',
+        'programImageTitleResize2',
+        'programOriginalPosterResizeX1',
+        'programOriginalPosterResizeX2',
+        'programImagePosterNoTitleResize',
+        'programThumbnailResizeX1',
+        'programThumbnailResizeX2',
+    ],
+    FIELD_QUERY_DEFAULT: {
+        // Query get only parent
+        programSeasonChild: false,
+
+        // For case denial program
+        verifyDenial: {
+            $in: [null, false],
+        },
+        'programChildrenSeasonData.parentID': null,
+    },
+};
